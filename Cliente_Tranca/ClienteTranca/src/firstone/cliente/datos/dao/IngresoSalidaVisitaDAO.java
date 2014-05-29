@@ -26,7 +26,7 @@ public class IngresoSalidaVisitaDAO {
     private static final Logger log = Logger.getLogger(IngresoSalidaVisitaDAO.class);
 
         public synchronized void insert(String tipo, Date fecha_hora, int id_tranca, String placa) {
-        log.info("Guardar IngresoSalida de Visita :: PLACA :" + placa + " :: TIPO :" + tipo + " :: FECHA_HORA :" + fecha_hora + " :: TRANCA :" + id_tranca);
+        log.info("Guardar IngresoSalida de Visita :: PLACA :" + placa + " :: TIPO :" + tipo + " :: FECHA_HORA :" + fecha_hora);
         Connection con = null;
         PreparedStatement st = null;
 

@@ -819,3 +819,25 @@ org.postgresql.util.PSQLException: This ResultSet is closed.
 [INFO ,2014-05-29 01:11:17,726 18362,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :456OAB
 [INFO ,2014-05-29 02:04:11,701 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :14
 [INFO ,2014-05-29 02:04:11,720 19,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :456OAB
+[INFO ,2014-05-29 08:07:35,132 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:07:35 BOT 2014
+[INFO ,2014-05-29 08:07:37,363 2231,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:07:37 BOT 2014
+[INFO ,2014-05-29 08:07:38,323 3191,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:07:38 BOT 2014
+[INFO ,2014-05-29 08:07:38,851 3719,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:07:38 BOT 2014
+[INFO ,2014-05-29 08:07:39,507 4375,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:07:39 BOT 2014
+[INFO ,2014-05-29 08:07:40,090 4958,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:07:40 BOT 2014
+[INFO ,2014-05-29 08:07:40,779 5647,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:07:40 BOT 2014
+[INFO ,2014-05-29 08:07:41,434 6302,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:07:41 BOT 2014
+[INFO ,2014-05-29 08:07:42,402 7270,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:07:42 BOT 2014
+[INFO ,2014-05-29 08:07:42,906 7774,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:07:42 BOT 2014
+[INFO ,2014-05-29 08:08:42,307 67175,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:08:42 BOT 2014
+[INFO ,2014-05-29 08:08:42,931 67799,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:08:42 BOT 2014
+[INFO ,2014-05-29 08:08:44,571 69439,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Activar Alarma Thu May 29 08:08:44 BOT 2014
+[INFO ,2014-05-29 08:08:46,707 71575,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] Apagar Alarma Thu May 29 08:08:46 BOT 2014
+[INFO ,2014-05-29 09:52:22,419 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Thu May 29 09:52:22 BOT 2014
+[INFO ,2014-05-29 09:52:22,448 29,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :999999 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-29 09:52:24,073 1654,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Thu May 29 09:52:24 BOT 2014
+[INFO ,2014-05-29 09:52:43,105 20686,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Thu May 29 09:52:43 BOT 2014
+[INFO ,2014-05-29 09:52:43,106 20687,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :999999 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-29 09:52:45,201 22782,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Thu May 29 09:52:45 BOT 2014
+[INFO ,2014-05-29 09:52:56,835 34416,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :999999 :: ACCION :Lanzar Aviso
+[INFO ,2014-05-29 09:54:28,146 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Thu May 29 09:54:28 BOT 2014

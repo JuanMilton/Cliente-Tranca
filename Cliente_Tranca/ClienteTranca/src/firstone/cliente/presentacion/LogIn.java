@@ -67,6 +67,10 @@ public class LogIn extends javax.swing.JFrame {
 
         jLabel2.setText("Contraseña");
 
+        jtext_ci.setText("777777");
+
+        jtext_contrasenia.setText("777777");
+
         jButton1.setText("Ingresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,9 +152,9 @@ public class LogIn extends javax.swing.JFrame {
         if (guardia != null)
         {
             JFrame.setDefaultLookAndFeelDecorated(true);
-            Main frame = new Main();
+            Main frame = new Main(guardia);
             frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             frame.pack();
             frame.setVisible(true);
             this.setVisible(false);

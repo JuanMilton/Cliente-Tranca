@@ -6,6 +6,15 @@
 
 package firstone.cliente.presentacion;
 
+import firstone.cliente.ccs.InterfazEnvioCliente;
+import firstone.cliente.ccs.model.Aviso;
+import firstone.cliente.datos.model.Bitacora;
+import firstone.cliente.datos.model.Guardia;
+import firstone.cliente.datos.model.Tranca;
+import firstone.cliente.negocio.BitacoraNegocio;
+import java.util.Date;
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -13,13 +22,23 @@ package firstone.cliente.presentacion;
  */
 public class LanzarAviso extends javax.swing.JFrame {
 
+    BitacoraNegocio bitacoraNegocio;
     
+    InterfazEnvioCliente interfazEnvioCliente;
+    
+    Tranca tranca;
+    Guardia guardia;
     /**
      * Creates new form LanzarAviso
      */
-    public LanzarAviso() {
+    public LanzarAviso(Tranca tranca, Guardia guardia) {
         initComponents();
         
+        bitacoraNegocio = new BitacoraNegocio();
+        interfazEnvioCliente = new InterfazEnvioCliente();
+        
+        this.tranca = tranca;
+        this.guardia = guardia;
     }
 
     /**
@@ -32,34 +51,34 @@ public class LanzarAviso extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        jrb_trancas = new javax.swing.JRadioButton();
+        jrb_propietarios = new javax.swing.JRadioButton();
+        jrb_todos = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jtext_mensaje = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setSelected(true);
-        jRadioButton1.setText("Todas las Trancas");
+        buttonGroup1.add(jrb_trancas);
+        jrb_trancas.setSelected(true);
+        jrb_trancas.setText("Todas las Trancas");
 
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setText("Todos los propietarios");
+        buttonGroup1.add(jrb_propietarios);
+        jrb_propietarios.setText("Todos los propietarios");
 
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setText("Todos");
+        buttonGroup1.add(jrb_todos);
+        jrb_todos.setText("Todos");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("¿A quienes desea enviar el Aviso?");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jtext_mensaje.setColumns(20);
+        jtext_mensaje.setRows(5);
+        jScrollPane1.setViewportView(jtext_mensaje);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Mensaje");
@@ -85,9 +104,9 @@ public class LanzarAviso extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jrb_todos, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jrb_trancas, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jrb_propietarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jScrollPane1))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -101,11 +120,11 @@ public class LanzarAviso extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton3)
+                .addComponent(jrb_todos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton1)
+                .addComponent(jrb_trancas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
+                .addComponent(jrb_propietarios)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -121,7 +140,24 @@ public class LanzarAviso extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        // ENVIAR POR LA RED EL AVISO, la actualizacion de los avisos en esta tranca se realizaran de manera directa
+        Aviso aviso = new Aviso();
+        aviso.setFrom(tranca.getDescripcion());
+        aviso.setFecha_hora((new Date()).getTime());
+        aviso.setMensaje(jtext_mensaje.getText());
+        
+        if (jrb_todos.isSelected())
+            aviso.setTo(Aviso.DIRIGIDO_TODOS);
+        else if (jrb_trancas.isSelected())
+            aviso.setTo(Aviso.DIRIGIDO_TRANCAS);
+        else
+            aviso.setTo(Aviso.DIRIGIDO_PROPIETARIOS);
+        if (interfazEnvioCliente.lanzarAviso(aviso))
+        {
+            // Se debe actualizar el MAIN de manera directa
+            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_AVISO, "Enviar un aviso  MENSAJE :"+ aviso.getMensaje());
+            this.setVisible(false);
+        }else
+            JOptionPane.showMessageDialog(rootPane, "Problemas al enviar Aviso, no se pudo completar", "Enviar Aviso", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -154,7 +190,7 @@ public class LanzarAviso extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LanzarAviso().setVisible(true);
+                new LanzarAviso(new Tranca(),new Guardia()).setVisible(true);
             }
         });
     }
@@ -164,10 +200,21 @@ public class LanzarAviso extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JRadioButton jrb_propietarios;
+    private javax.swing.JRadioButton jrb_todos;
+    private javax.swing.JRadioButton jrb_trancas;
+    private javax.swing.JTextArea jtext_mensaje;
     // End of variables declaration//GEN-END:variables
+
+    
+    private void registrarBitacoraGuardia(String accion, String detalle) {
+        Bitacora bitacora = new Bitacora();
+        bitacora.setAccion(accion);
+        bitacora.setCi_guardia(guardia.getCi());
+        bitacora.setDetalle(detalle);
+        bitacora.setFecha_hora(new Date());
+        bitacoraNegocio.registrarBitacora(bitacora);
+    }
+
 }

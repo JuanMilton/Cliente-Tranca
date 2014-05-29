@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package firstone.cliente.datos.model;
+package firstone.cliente.negocio;
 
 import firstone.cliente.datos.dao.IngresoSalidaVisitaDAO;
 import java.util.Date;

@@ -3,18 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package firstone.cliente.presentacion;
 
+import firstone.cliente.ccs.InterfazEnvioCliente;
+import firstone.cliente.circuito.negocio.InteraccionNegocio;
 import firstone.cliente.datos.model.Aviso;
 import firstone.cliente.datos.model.Alarma;
-import firstone.cliente.datos.model.IngresoSalidaVisitaNegocio;
+import firstone.cliente.datos.model.Bitacora;
+import firstone.cliente.datos.model.Guardia;
+import firstone.cliente.negocio.IngresoSalidaVisitaNegocio;
 import firstone.cliente.datos.model.Propietario;
 import firstone.cliente.datos.model.Tranca;
 import firstone.cliente.datos.model.Vehiculo;
 import firstone.cliente.datos.model.VehiculoVisita;
 import firstone.cliente.datos.model.Visita;
 import firstone.cliente.negocio.AvisoNegocio;
+import firstone.cliente.negocio.BitacoraNegocio;
 import firstone.cliente.negocio.PropietarioNegocio;
 import firstone.cliente.negocio.TrancaNegocio;
 import firstone.cliente.negocio.VehiculoNegocio;
@@ -40,24 +44,29 @@ public class Main extends javax.swing.JFrame {
     VisitaNegocio visitaNegocio;
     VehiculoVisitaNegocio vehiculoVisitaNegocio;
     VisitaVehiculoNegocio visitaVehiculoNegocio;
-    
+
     PropietarioNegocio propietarioNegocio;
     VehiculoNegocio vehiculoNegocio;
     IngresoSalidaVisitaNegocio ingresoSalidaVisitaNegocio;
     TrancaNegocio trancaNegocio;
+    BitacoraNegocio bitacoraNegocio;
     
+    InteraccionNegocio circuitoNegocio;
+    InterfazEnvioCliente interfazEnvioCliente;
+
     List<Alarma> alarmas;
+    Tranca tranca;
+    Guardia guardia;
+
     /**
      * Creates new form Main
      */
-    public Main() {
+    public Main(Guardia guardia) {
         initComponents();
-        
+
         DOMConfigurator.configure("etc" + File.separator + "log4j.xml");
         alarmas = new ArrayList<>();
-        
-        
-        
+
         Alarma a1 = new Alarma();
         a1.setEmisor("Tranca Norte");
         a1.setPrioridad("Rojo");
@@ -66,22 +75,26 @@ public class Main extends javax.swing.JFrame {
         a2.setPrioridad("Amarillo");
         alarmas.add(a1);
         alarmas.add(a2);
-                
-                
+
         initializeValues();
         
+        this.guardia = guardia;
         visitaNegocio = new VisitaNegocio();
         vehiculoVisitaNegocio = new VehiculoVisitaNegocio();
         visitaVehiculoNegocio = new VisitaVehiculoNegocio();
-        
+
         propietarioNegocio = new PropietarioNegocio();
         vehiculoNegocio = new VehiculoNegocio();
         ingresoSalidaVisitaNegocio = new IngresoSalidaVisitaNegocio();
         trancaNegocio = new TrancaNegocio();
+        circuitoNegocio = new InteraccionNegocio();
+        bitacoraNegocio = new BitacoraNegocio();
+        interfazEnvioCliente = new InterfazEnvioCliente();
+
+        tranca = trancaNegocio.obtenerTranca();
     }
-    
-    private void initializeValues()
-    {
+
+    private void initializeValues() {
         cargarAdvertencias();
         cargarAlarmas();
     }
@@ -152,9 +165,9 @@ public class Main extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        jboton_alarma_roja = new javax.swing.JButton();
+        jboton_apagar_alarma = new javax.swing.JButton();
+        jboton_alarma_verde = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
@@ -173,6 +186,11 @@ public class Main extends javax.swing.JFrame {
         jButton3.setText("Alarma Roja");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                onWindowsClosing(evt);
+            }
+        });
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -280,11 +298,6 @@ public class Main extends javax.swing.JFrame {
 
         jLabel10.setText("Teléfono(s)");
 
-        jlist_telefonos_propietario.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "77370309", "78460453" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jlist_telefonos_propietario.setValueIsAdjusting(true);
         jScrollPane1.setViewportView(jlist_telefonos_propietario);
 
@@ -406,11 +419,6 @@ public class Main extends javax.swing.JFrame {
 
         jLabel13.setText("Teléfono(s)");
 
-        list_telefonos_propietarios.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "77370309", "78460453" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         list_telefonos_propietarios.setValueIsAdjusting(true);
         jScrollPane4.setViewportView(list_telefonos_propietarios);
 
@@ -435,7 +443,7 @@ public class Main extends javax.swing.JFrame {
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addComponent(jLabel25)
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -531,7 +539,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel20)
                     .addComponent(jLabel19))
-                .addGap(0, 164, Short.MAX_VALUE))
+                .addGap(0, 152, Short.MAX_VALUE))
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -608,13 +616,33 @@ public class Main extends javax.swing.JFrame {
 
         jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jButton2.setText("Alarma Roja");
+        jboton_alarma_roja.setText("Alarma Roja");
+        jboton_alarma_roja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jboton_alarma_rojaActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("Alarma Amarilla");
+        jboton_apagar_alarma.setText("Alarma Amarilla");
+        jboton_apagar_alarma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jboton_apagar_alarmaActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("Alarma Verde");
+        jboton_alarma_verde.setText("Alarma Verde");
+        jboton_alarma_verde.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jboton_alarma_verdeActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Dejar Pasar Vehículo");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton9.setText("Actualizar");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -634,9 +662,9 @@ public class Main extends javax.swing.JFrame {
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jboton_alarma_roja, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jboton_apagar_alarma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jboton_alarma_verde, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -655,11 +683,11 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton9)
                     .addComponent(jButton8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(jboton_alarma_roja)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
+                .addComponent(jboton_apagar_alarma)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5)
+                .addComponent(jboton_alarma_verde)
                 .addContainerGap())
         );
 
@@ -784,48 +812,49 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         Visita visita = new Visita();
-        
+
         visita.setCi(text_ci_visita.getText());
         visita.setNombres(text_nombres_visita.getText());
         visita.setApellidos(text_apellidos_visita.getText());
-        
+
         String msg = visitaNegocio.validarValores(visita);
-        if (msg == null)
-        {
+        if (msg == null) {
             VehiculoVisita vv = new VehiculoVisita();
             vv.setPlaca(text_placa_visita.getText());
             vv.setMarca(text_marca_visita.getText());
-            
+
             msg = vehiculoVisitaNegocio.validarValores(vv);
-            
-            if (msg == null)
-            {
-                if (vehiculoVisitaNegocio.buscarVehiculoVisita(text_placa_visita.getText()) == null)
+
+            if (msg == null) {
+                if (vehiculoVisitaNegocio.buscarVehiculoVisita(text_placa_visita.getText()) == null) {
                     vehiculoVisitaNegocio.registrarVehiculoVisita(vv);
-                if (visitaNegocio.buscarVisita(text_ci_visita.getText()) == null)
+                }
+                if (visitaNegocio.buscarVisita(text_ci_visita.getText()) == null) {
                     visitaNegocio.registrarVisita(visita);
-                if (! visitaVehiculoNegocio.existeRelacion(vv.getPlaca(), visita.getCi()))
+                }
+                if (!visitaVehiculoNegocio.existeRelacion(vv.getPlaca(), visita.getCi())) {
                     visitaVehiculoNegocio.insertarRelacion(vv.getPlaca(), visita.getCi());
-                
-                Tranca tranca = trancaNegocio.obtenerTranca();
-                
+                }
+
                 ingresoSalidaVisitaNegocio.registrarIngresoSalida(tranca.getTipo(), new Date(), tranca.getId(), text_placa_visita.getText()); ////// SE REALIZA EL REGISTRO DEL INGRESO DE LA VISITA
                 
+                registrarBitacoraGuardia(Bitacora.ACCION_REGISTRO_VISITA,"Ingreso la visita con CI : " + visita.getCi()+" con el vehiculo de PLACA : " + vv.getPlaca());
+                
                 JOptionPane.showMessageDialog(rootPane, "Registro realizado correctamente", "Registro de Visita", JOptionPane.INFORMATION_MESSAGE);
-            }else
-                JOptionPane.showMessageDialog(rootPane, "Por favor, corrija los valores ingresados del vehículo de la VISITA\n"+msg, "Registro de Vehiculo de Visita", JOptionPane.WARNING_MESSAGE);
-        }else
-            JOptionPane.showMessageDialog(rootPane, "Por favor, corrija los valores ingresados de la VISITA\n"+msg, "Registro de Visita", JOptionPane.WARNING_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Por favor, corrija los valores ingresados del vehículo de la VISITA\n" + msg, "Registro de Vehiculo de Visita", JOptionPane.WARNING_MESSAGE);
+            }
+        } else {
+            JOptionPane.showMessageDialog(rootPane, "Por favor, corrija los valores ingresados de la VISITA\n" + msg, "Registro de Visita", JOptionPane.WARNING_MESSAGE);
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void onKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_onKeyReleased
         Visita visita = visitaNegocio.buscarVisita(text_ci_visita.getText());
-        if (visita != null)
-        {
+        if (visita != null) {
             text_nombres_visita.setText(visita.getNombres());
             text_apellidos_visita.setText(visita.getApellidos());
-        }else
-        {
+        } else {
             text_nombres_visita.setText("");
             text_apellidos_visita.setText("");
         }
@@ -833,33 +862,32 @@ public class Main extends javax.swing.JFrame {
 
     private void onKeyReleasedPlaca(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_onKeyReleasedPlaca
         VehiculoVisita vehiculoVisita = vehiculoVisitaNegocio.buscarVehiculoVisita(text_placa_visita.getText());
-        if (vehiculoVisita != null)
+        if (vehiculoVisita != null) {
             text_marca_visita.setText(vehiculoVisita.getMarca());
-        else
+        } else {
             text_marca_visita.setText("");
+        }
     }//GEN-LAST:event_onKeyReleasedPlaca
 
     private void onKeyReleasedPropietarioVisitas(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_onKeyReleasedPropietarioVisitas
-        if (((evt.getKeyCode() >= 65 && evt.getKeyCode() <= 90) || evt.getKeyCode() == 0) && text_nombre_apellido_propietario.getText().trim().length() > 0)
-        {
+        if (((evt.getKeyCode() >= 65 && evt.getKeyCode() <= 90) || evt.getKeyCode() == 0) && text_nombre_apellido_propietario.getText().trim().length() > 0) {
             Propietario propietario = propietarioNegocio.buscarPropietarioPorNombreOApellido(text_nombre_apellido_propietario.getText().trim());
-            if (propietario != null)
-            {
+            if (propietario != null) {
                 String aux = text_nombre_apellido_propietario.getText();
                 int index = text_nombre_apellido_propietario.getText().length();
-                text_nombre_apellido_propietario.setText(propietario.getNombres()+" "+propietario.getApellidos());
+                text_nombre_apellido_propietario.setText(propietario.getNombres() + " " + propietario.getApellidos());
                 text_ci_propietario.setText(propietario.getCi());
 
                 DefaultListModel<Integer> telefonos = new DefaultListModel<>();
-                for (Integer telf : propietario.getTelefonos())
-                {
+                for (Integer telf : propietario.getTelefonos()) {
                     telefonos.addElement(telf);
                 }
                 list_telefonos_propietarios.setModel(telefonos);
 
-                int index2 = text_nombre_apellido_propietario.getText().toUpperCase().indexOf(" "+aux.toUpperCase());
-                if (index2 > 0)
-                    index = index2+2;
+                int index2 = text_nombre_apellido_propietario.getText().toUpperCase().indexOf(" " + aux.toUpperCase());
+                if (index2 > 0) {
+                    index = index2 + 2;
+                }
                 text_nombre_apellido_propietario.setSelectionStart(index);
                 text_nombre_apellido_propietario.setSelectionEnd(text_nombre_apellido_propietario.getText().length());
                 //////// FALTA MOSTRAR LA FOTO DEL PROPIETARIO
@@ -874,7 +902,7 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         JFrame.setDefaultLookAndFeelDecorated(true);
-        LanzarAviso frame = new LanzarAviso();
+        LanzarAviso frame = new LanzarAviso(tranca,guardia);
         frame.setTitle("Avisar");
         frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         frame.pack();
@@ -882,8 +910,88 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // PROCESO DE SINCRONIZACION CON EL CORE
+        interfazEnvioCliente.actualizar();
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        circuitoNegocio.dejarPasarVehiculo();
+        
+        registrarBitacoraGuardia(Bitacora.ACCION_DEJAR_PASAR_VEHICULO, "Se dejo pasar un vehiculo de manera directa sin registro, fecha y hora :"+(new Date()) );
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jboton_alarma_rojaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_alarma_rojaActionPerformed
+        circuitoNegocio.activarAlarma();
+
+        Alarma alarma = new Alarma();
+        alarma.setEmisor(tranca.getDescripcion());
+        alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.ROJO);
+
+        if (interfazEnvioCliente.lanzarAlarma(alarma))
+        {
+            jboton_alarma_roja.setVisible(false);
+            jboton_alarma_verde.setVisible(false);
+            jboton_apagar_alarma.setText("Apagar Alarma");
+
+            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma ROJA a fecha y hora :"+(new Date()) );
+        }else
+        {
+            JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_jboton_alarma_rojaActionPerformed
+
+    private void jboton_apagar_alarmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_apagar_alarmaActionPerformed
+        if (jboton_apagar_alarma.getText().equalsIgnoreCase("Alarma Amarilla")) {
+            
+            circuitoNegocio.activarAlarma();
+
+            Alarma alarma = new Alarma();
+            alarma.setEmisor(tranca.getDescripcion());
+            alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.AMARILLO);
+
+            if (interfazEnvioCliente.lanzarAlarma(alarma))
+            {
+                jboton_alarma_roja.setVisible(false);
+                jboton_alarma_verde.setVisible(false);
+                jboton_apagar_alarma.setText("Apagar Alarma");
+            
+                registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma AMARILLA a fecha y hora :"+(new Date()) );
+            }else
+                JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        } else {
+            circuitoNegocio.apagarAlarma();
+            jboton_alarma_roja.setVisible(true);
+            jboton_alarma_verde.setVisible(true);
+            jboton_apagar_alarma.setText("Alarma Amarilla");
+        }
+    }//GEN-LAST:event_jboton_apagar_alarmaActionPerformed
+
+    private void jboton_alarma_verdeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_alarma_verdeActionPerformed
+
+        circuitoNegocio.activarAlarma();
+
+        Alarma alarma = new Alarma();
+        alarma.setEmisor(tranca.getDescripcion());
+        alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.VERDE);
+
+        if (interfazEnvioCliente.lanzarAlarma(alarma))
+        {
+            jboton_alarma_roja.setVisible(false);
+            jboton_alarma_verde.setVisible(false);
+            jboton_apagar_alarma.setText("Apagar Alarma");
+
+            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma VERDE a fecha y hora :"+(new Date()) );
+        }else
+            JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_jboton_alarma_verdeActionPerformed
+
+    private void onWindowsClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onWindowsClosing
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        LogIn frame = new LogIn();
+        frame.setTitle("Ingreso - Sistema de Control de Acceso Vehicular");
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }//GEN-LAST:event_onWindowsClosing
 
     /**
      * @param args the command line arguments
@@ -915,17 +1023,14 @@ public class Main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main().setVisible(true);
+                new Main(new Guardia()).setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -972,6 +1077,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JButton jboton_alarma_roja;
+    private javax.swing.JButton jboton_alarma_verde;
+    private javax.swing.JButton jboton_apagar_alarma;
     private javax.swing.JList jlist_telefonos_propietario;
     private javax.swing.JPanel jpanel_foto_vehiculo;
     private javax.swing.JTable jtable_advertencias;
@@ -994,69 +1102,64 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField text_placa_visita;
     // End of variables declaration//GEN-END:variables
 
-    
-    
-    
-    
-    
-    
-    
     private void registrarIngresoSalidaVehiculo(int rfid) {
         Vehiculo vehiculo = vehiculoNegocio.obtenerVehiculoRFID(rfid);
-        if (vehiculo != null)
-        {
+        if (vehiculo != null) {
             List<Propietario> propietarios = propietarioNegocio.obtenerPropietarios(vehiculo.getPlaca());
-            
+
             jtext_placa_vehiculo.setText(vehiculo.getPlaca());
             jtext_marca_vehiculo.setText(vehiculo.getMarca());
             jtext_modelo_vehiculo.setText(vehiculo.getModelo());
             //FALTA FOTO DEL VEHICULO
-            
-            for (Propietario propietario : propietarios)
-            {
+
+            for (Propietario propietario : propietarios) {
                 jtext_ci_propietario.setText(propietario.getCi());
                 jtext_nombre_propietario.setText(propietario.getNombres());
                 jtext_apellido_propietario.setText(propietario.getApellidos());
                 jtext_licencia_propietario.setText(propietario.getNro_licencia());
-                
-                
+
                 DefaultListModel<Integer> telefonos = new DefaultListModel<>();
-                for (Integer telf : propietario.getTelefonos())
-                {
+                for (Integer telf : propietario.getTelefonos()) {
                     telefonos.addElement(telf);
                 }
                 jlist_telefonos_propietario.setModel(telefonos);
-                
+
             }
-            
-        }else
+
+        } else {
             JOptionPane.showMessageDialog(rootPane, "Se reconocio vehiculo con la Etiqueta de FIRSTONE que no esta registrado en este lugar", "Vehiculo reconocido", JOptionPane.WARNING_MESSAGE);
+        }
     }
-    
-    private void cargarAdvertencias()
-    {
+
+    private void cargarAdvertencias() {
         AvisoNegocio advertenciaNegocio = new AvisoNegocio();
         List<Aviso> advertencias = advertenciaNegocio.obtenerTodasAdvertencias();
-        
+
         DefaultTableModel defaultModel = (DefaultTableModel) jtable_advertencias.getModel();
         defaultModel.setNumRows(0);
-        for (Aviso advertencia : advertencias)
-        {
+        for (Aviso advertencia : advertencias) {
             defaultModel.addRow(advertencia.fieldsToObjects());
         }
         jtable_advertencias.setModel(defaultModel);
-        
+
     }
-    
-    private void cargarAlarmas()
-    {
+
+    private void cargarAlarmas() {
         DefaultTableModel defaultModel = (DefaultTableModel) jtable_alarmas.getModel();
         defaultModel.setNumRows(0);
-        for (Alarma alarma : alarmas)
-        {
+        for (Alarma alarma : alarmas) {
             defaultModel.addRow(alarma.fieldsToObjects());
         }
         jtable_alarmas.setModel(defaultModel);
-        
+
+    }
+
+    private void registrarBitacoraGuardia(String accion, String detalle) {
+        Bitacora bitacora = new Bitacora();
+        bitacora.setAccion(accion);
+        bitacora.setCi_guardia(guardia.getCi());
+        bitacora.setDetalle(detalle);
+        bitacora.setFecha_hora(new Date());
+        bitacoraNegocio.registrarBitacora(bitacora);
     }
 }
