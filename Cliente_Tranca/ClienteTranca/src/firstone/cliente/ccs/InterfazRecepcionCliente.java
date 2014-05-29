@@ -8,6 +8,8 @@ package firstone.cliente.ccs;
 
 import firstone.cliente.datos.model.Alarma;
 import firstone.cliente.datos.model.Aviso;
+import firstone.cliente.datos.model.Tranca;
+import java.util.List;
 
 /**
  *
@@ -17,8 +19,11 @@ public interface InterfazRecepcionCliente {
 
     public void nuevosDatos();
     
-    public Aviso llegoAviso();
+    public void llegoAviso(Aviso aviso);
     
-    public Alarma llegoAlarma();
+    public void llegoAlarma(Alarma alarma);
 
+    public void trancasExistentes(List<Tranca> trancas);
+    
+    public void verificarAdministrador(boolean resultado);
 }

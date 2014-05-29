@@ -27,4 +27,9 @@ public class TrancaNegocio {
         return trancaDao.get();
     }
     
+    public void guardarTranca(Tranca tranca)
+    {
+        trancaDao.insert(tranca);
+    }
+    
 }

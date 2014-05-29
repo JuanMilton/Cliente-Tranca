@@ -30,4 +30,14 @@ public class InterfazEnvioCliente {
         
     }
     
+    public void solicitarTrancas()
+    {
+        
+    }
+    
+    public void verificarAdministrador(String email, String password)
+    {
+        
+    }
+    
 }

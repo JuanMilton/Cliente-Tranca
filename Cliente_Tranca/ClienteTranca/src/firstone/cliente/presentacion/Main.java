@@ -6,7 +6,9 @@
 package firstone.cliente.presentacion;
 
 import firstone.cliente.ccs.InterfazEnvioCliente;
+import firstone.cliente.circuito.EventListener;
 import firstone.cliente.circuito.negocio.InteraccionNegocio;
+import firstone.cliente.circuito.proceso.ProcesoRFID;
 import firstone.cliente.datos.model.Aviso;
 import firstone.cliente.datos.model.Alarma;
 import firstone.cliente.datos.model.Bitacora;
@@ -57,6 +59,7 @@ public class Main extends javax.swing.JFrame {
     List<Alarma> alarmas;
     Tranca tranca;
     Guardia guardia;
+    ProcesoRFID procesoRFID;
 
     /**
      * Creates new form Main
@@ -97,6 +100,16 @@ public class Main extends javax.swing.JFrame {
     private void initializeValues() {
         cargarAdvertencias();
         cargarAlarmas();
+        
+        procesoRFID = new ProcesoRFID(new EventListener() {
+
+            @Override
+            public void llegoVehiculo(int rfid) {
+                registrarIngresoSalidaVehiculo(rfid);
+            }
+        });
+        procesoRFID.start();
+        
     }
 
     /**
@@ -985,6 +998,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jboton_alarma_verdeActionPerformed
 
     private void onWindowsClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onWindowsClosing
+        procesoRFID.detenerProceso();
         JFrame.setDefaultLookAndFeelDecorated(true);
         LogIn frame = new LogIn();
         frame.setTitle("Ingreso - Sistema de Control de Acceso Vehicular");
@@ -1123,6 +1137,8 @@ public class Main extends javax.swing.JFrame {
                     telefonos.addElement(telf);
                 }
                 jlist_telefonos_propietario.setModel(telefonos);
+                
+                ///FALTA LA FOTO DE LOS PROPIETARIOS
 
             }
 

@@ -49,6 +49,11 @@ public class LogIn extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                onClosingLogin(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 102));
 
@@ -154,13 +159,17 @@ public class LogIn extends javax.swing.JFrame {
             JFrame.setDefaultLookAndFeelDecorated(true);
             Main frame = new Main(guardia);
             frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
-            frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             frame.pack();
             frame.setVisible(true);
-            this.setVisible(false);
+            this.dispose();
         }else
             JOptionPane.showMessageDialog(rootPane, "Carnet de Identidad o Contraseña incorrectos", "Ingresando a IdentiFour", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void onClosingLogin(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onClosingLogin
+        System.exit(0);
+    }//GEN-LAST:event_onClosingLogin
 
     /**
      * @param args the command line arguments
@@ -192,7 +201,9 @@ public class LogIn extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LogIn().setVisible(true);
+                LogIn login = new LogIn();
+                login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                login.setVisible(true);
             }
         });
     }
