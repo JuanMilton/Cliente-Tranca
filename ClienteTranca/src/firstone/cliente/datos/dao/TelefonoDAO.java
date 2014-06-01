@@ -6,7 +6,7 @@
 package firstone.cliente.datos.dao;
 
 import firstone.cliente.datos.conexion.ServiceProvider;
-import firstone.cliente.datos.model.Synchronizer;
+import firstone.cliente.datos.model.Propietario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,26 +19,25 @@ import org.apache.log4j.Logger;
  *
  * @author Milton
  */
-public class SynchronizerDAO {
+public class TelefonoDAO {
 
-    private static final Logger log = Logger.getLogger(SynchronizerDAO.class);
+    private static final Logger log = Logger.getLogger(TelefonoDAO.class);
 
-    public synchronized void insert(Synchronizer s) {
-//        log.info("Guardar Bitacora :: GUARDIA :" + bitacora.getCi_guardia() + " :: ACCION :" + bitacora.getAccion());
+    public synchronized void insert(String ci, int telefono) {
+        log.info("Guardar Telefono :: CI :" + ci + " :: TELEFONO :"+telefono);
         Connection con = null;
         PreparedStatement st = null;
 
         try {
             con = ServiceProvider.openConnection();
 
-            String sql = "INSERT INTO synchronizer(transaccion,ref_id,tabla) VALUES(?,?,?)";
+            String sql = "INSERT INTO telefono_propietario(ci,telefono) VALUES(?,?)";
 
             st = con.prepareStatement(sql);
             if (st != null) {
-                st.setString(1, s.getTransaccion());
-                st.setString(2, s.getRef_id());
-                st.setString(3, s.getTabla());
-
+                st.setString(1, ci);
+                st.setInt(2, telefono);
+                
                 st.execute();
             }
         } catch (SQLException e) {
@@ -62,54 +61,25 @@ public class SynchronizerDAO {
         }
     }
     
-    public List<Synchronizer> obtenerTransacciones()
-    {
-        log.info("Obteniendo todas las ultimas transacciones realizadas");
+    public synchronized void delete(String ci, int telefono) {
+        log.info("Eliminar Telefono :: CI :" + ci + " :: TELEFONO :"+telefono);
         Connection con = null;
         PreparedStatement st = null;
-        ResultSet rs = null;
-
-        List<Synchronizer> ss = new ArrayList<>();
 
         try {
             con = ServiceProvider.openConnection();
 
-            String sql = "SELECT * FROM synchronizer";
-            st = con.prepareStatement(sql);
+            String sql = "DELETE FROM telefono_propietario WHERE telefono = ?";
 
+            st = con.prepareStatement(sql);
             if (st != null) {
-                rs = st.executeQuery();
-
-                while (rs.next()) {
-                    
-                    Synchronizer s = new Synchronizer();
-                    s.setRef_id(rs.getString("ref_id"));
-                    s.setTabla(rs.getString("tabla"));
-                    s.setTransaccion(rs.getString("transaccion"));
-                    
-                    ss.add(s);
-                }
-            }
-            st.close();
-            
-            sql = "TRUNCATE TABLE synchronizer";
-            st = con.prepareStatement(sql);
-            if (st != null)
-            {
+                st.setInt(1, telefono);
+                
                 st.execute();
             }
-
         } catch (SQLException e) {
-            log.error("Error al consultar a la base de datos", e);
+            log.error("Error al realizar la insercion en la base de datos", e);
         } finally {
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                log.error("Error al cerrar el ResultSet", e);
-            }
-
             try {
                 if (st != null) {
                     st.close();
@@ -126,15 +96,5 @@ public class SynchronizerDAO {
                 log.error("Error al cerrar la conexion a la base de datos", e);
             }
         }
-        return ss;
     }
-    
-//    public static void main(String[] args) {
-//        List<Synchronizer> ss = obtenerTransacciones();
-//        
-//        for (Synchronizer s : ss)
-//        {
-//            System.out.println("" + s.getRef_id());
-//        }
-//    }
 }

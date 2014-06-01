@@ -83,42 +83,117 @@ public class GuardiaDAO {
         return guardia;
     }
 
-//    public synchronized void insert(Visita visita) {
-//        log.info("Guardar visita :: CI " + visita.getCi());
-//        Connection con = null;
-//        PreparedStatement st = null;
-//
-//        try {
-//            con = ServiceProvider.openConnection();
-//
-//            String sql = "INSERT INTO visita(ci,nombres,apellidos) VALUES(?,?,?)";
-//
-//            st = con.prepareStatement(sql);
-//            if (st != null) {
-//                st.setString(1, visita.getCi());
-//                st.setString(2, visita.getNombres());
-//                st.setString(3, visita.getApellidos());
-//                
-//                st.execute();
-//            }
-//        } catch (SQLException e) {
-//            log.error("Error al realizar la insercion en la base de datos", e);
-//        } finally {
-//            try {
-//                if (st != null) {
-//                    st.close();
-//                }
-//            } catch (SQLException e) {
-//                log.error("Error al cerrar el Statement", e);
-//            }
-//
-//            try {
-//                if (con != null) {
-//                    con.close();
-//                }
-//            } catch (SQLException e) {
-//                log.error("Error al cerrar la conexion a la base de datos", e);
-//            }
-//        }
-//    }
+    public synchronized void insert(String ci, String nombres, String apellidos, String pass) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "INSERT INTO guardia(ci,nombre,apellido,password) VALUES(?,?,?,?)";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, ci);
+                st.setString(2, nombres);
+                st.setString(3, apellidos);
+                st.setString(4, pass);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
+    
+    public synchronized void update(String ci, String nombres, String apellidos, String pass) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "UPDATE guardia SET nombre = ?, apellido = ?, password = ? WHERE ci = ?";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, nombres);
+                st.setString(2, apellidos);
+                st.setString(3, pass);
+                st.setString(4, ci);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
+    
+    public synchronized void delete(String ci) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "DELETE FROM guardia WHERE ci = ?";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, ci);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
 }

@@ -9,11 +9,13 @@ package firstone.cliente.ccs;
 import com.firstonesoft.client.Client;
 import com.firstonesoft.client.event.EventClient;
 import com.firstonesoft.client.util.ObjectUtil;
+import firstone.cliente.datos.dao.GuardiaDAO;
 import firstone.serializable.Contrato;
 import firstone.serializable.Propietario;
 import firstone.serializable.Tranca;
 import firstone.cliente.event.EventConfiguracion;
 import firstone.cliente.util.Parametros;
+import firstone.serializable.Guardia;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -36,11 +38,14 @@ public class InterfazConfiguracion implements EventClient {
     private Client cliente;
     private Map<String,Object> keys;
     
+    private GuardiaDAO guardiaDao;
+    
     public InterfazConfiguracion(EventConfiguracion eventConfiguracion)
     {
         this.eventConfiguracion = eventConfiguracion;
         cliente = new Client(IP_CORE, PORT_CORE);
         cliente.setEventClient(this);
+        guardiaDao= new GuardiaDAO();
     }
     
     public boolean iniciar()
@@ -51,10 +56,6 @@ public class InterfazConfiguracion implements EventClient {
         configurador.setFoto(null);
         configurador.setNombres("IdentiFour");
         configurador.setNro_licencia("000000-C");
-        List<Integer> telefonos = new ArrayList<>();
-        telefonos.add(77370309);
-        telefonos.add(78460453);
-        configurador.setTelefonos(telefonos);
         try {
             cliente.connectOpened(configurador.getCi(), configurador);
             return true;
@@ -99,6 +100,15 @@ public class InterfazConfiguracion implements EventClient {
             eventConfiguracion.autenticacionAdministrador(null,id_entorno);
     }
 
+    private void guardiasExistentes(byte[] contenido, int id_entorno)
+    {
+        List<Guardia> guardias = (List<Guardia>)ObjectUtil.createObject(contenido);
+        for (Guardia g : guardias)
+        {
+            guardiaDao.insert(g.getCi(), g.getNombre(), g.getApellido(), g.getPassword());
+        }
+    }
+    
     @Override
     public void onNewPackage(long size) {
     }
@@ -113,6 +123,7 @@ public class InterfazConfiguracion implements EventClient {
         switch (contrato.getAccion())
         {
             case Accion.AUTENTICAR_ADMINISTRADOR: autenticacionAdministrador(contrato.getContenido(), contrato.getId_entorno()); break;
+            case Accion.GUARDIAS: guardiasExistentes(contrato.getContenido(), contrato.getId_entorno()); break;
         }
     }
 

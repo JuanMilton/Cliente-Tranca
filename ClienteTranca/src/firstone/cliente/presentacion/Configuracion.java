@@ -230,6 +230,6 @@ public class Configuracion extends javax.swing.JFrame implements EventConfigurac
             }
         }
         else
-            JOptionPane.showMessageDialog(rootPane, "Correo Electrónico o Contraseña incorrectos", "Configurando a IdentiFour", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Correo Electrónico o Contraseña, o tal vez tenga que gestionar Guardias y Trancas desde la Web de Administracion", "Configurando a IdentiFour", JOptionPane.WARNING_MESSAGE);
     }
 }

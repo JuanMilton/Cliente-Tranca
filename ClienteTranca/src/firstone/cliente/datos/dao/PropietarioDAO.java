@@ -189,42 +189,119 @@ public class PropietarioDAO {
         return propietarios;
     }
 
-//    public synchronized void insert(Visita visita) {
-//        log.info("Guardar visita :: CI " + visita.getCi());
-//        Connection con = null;
-//        PreparedStatement st = null;
-//
-//        try {
-//            con = ServiceProvider.openConnection();
-//
-//            String sql = "INSERT INTO visita(ci,nombres,apellidos) VALUES(?,?,?)";
-//
-//            st = con.prepareStatement(sql);
-//            if (st != null) {
-//                st.setString(1, visita.getCi());
-//                st.setString(2, visita.getNombres());
-//                st.setString(3, visita.getApellidos());
-//                
-//                st.execute();
-//            }
-//        } catch (SQLException e) {
-//            log.error("Error al realizar la insercion en la base de datos", e);
-//        } finally {
-//            try {
-//                if (st != null) {
-//                    st.close();
-//                }
-//            } catch (SQLException e) {
-//                log.error("Error al cerrar el Statement", e);
-//            }
-//
-//            try {
-//                if (con != null) {
-//                    con.close();
-//                }
-//            } catch (SQLException e) {
-//                log.error("Error al cerrar la conexion a la base de datos", e);
-//            }
-//        }
-//    }
+    public synchronized void insert(String ci, String nombres, String apellidos, byte[] foto, String nro_licencia) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "INSERT INTO propietario(ci,nombres,apellidos,foto,nro_licencia) VALUES(?,?,?,?,?)";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, ci);
+                st.setString(2, nombres);
+                st.setString(3, apellidos);
+                st.setBytes(4, foto);
+                st.setString(5, nro_licencia);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
+    
+    public synchronized void update(String ci, String nombres, String apellidos, byte[] foto, String nro_licencia) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "UPDATE propietario SET nombres = ?, apellidos = ?, foto = ?, nro_licencia = ? WHERE ci = ?";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, nombres);
+                st.setString(2, apellidos);
+                st.setBytes(3, foto);
+                st.setString(4, nro_licencia);
+                st.setString(5, ci);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
+    
+    public synchronized void delete(String ci) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "DELETE FROM propietario WHERE ci = ?";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, ci);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
 }

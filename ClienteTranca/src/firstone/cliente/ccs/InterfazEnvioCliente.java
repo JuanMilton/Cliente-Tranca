@@ -12,13 +12,11 @@ import com.firstonesoft.client.util.ObjectUtil;
 import firstone.serializable.Aviso;
 import firstone.cliente.datos.model.Alarma;
 import firstone.cliente.negocio.SynchronizerNegocio;
+import firstone.cliente.util.Sincronizacion;
 import firstone.serializable.Contrato;
-import firstone.serializable.Guardia;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -90,6 +88,21 @@ public class InterfazEnvioCliente implements EventClient {
         contrato.setContenido(ObjectUtil.createBytes(paquete));
         contrato.setId_entorno(id_entorno);
         try {
+            if (cliente.isConnected())
+                cliente.sendPackage(ObjectUtil.createBytes(contrato));
+        } catch (IOException ex) {
+            log.error("No se pudo subir la informacion al Core ",ex);
+        }
+    }
+    
+    public void solicitarSincronizacion(int id_entorno)
+    {
+        Contrato contrato = new Contrato();
+        contrato.setAccion(Accion.DOWNLOAD);
+        
+        contrato.setId_entorno(id_entorno);
+        try {
+            contrato.setContenido((Sincronizacion.ULTIMO_ID_SINCRONIZADO+","+id_entorno).getBytes("UTF-8"));
             if (cliente.isConnected())
                 cliente.sendPackage(ObjectUtil.createBytes(contrato));
         } catch (IOException ex) {

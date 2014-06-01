@@ -26,21 +26,21 @@ import firstone.cliente.datos.model.Visita;
 import firstone.cliente.negocio.AvisoNegocio;
 import firstone.cliente.negocio.BitacoraNegocio;
 import firstone.cliente.negocio.PropietarioNegocio;
+import firstone.cliente.negocio.SynchronizerNegocio;
 import firstone.cliente.negocio.TrancaNegocio;
 import firstone.cliente.negocio.VehiculoNegocio;
 import firstone.cliente.negocio.VehiculoVisitaNegocio;
 import firstone.cliente.negocio.VisitaNegocio;
 import firstone.cliente.negocio.VisitaVehiculoNegocio;
 import firstone.cliente.util.Parametros;
+import firstone.cliente.util.Sincronizacion;
 import firstone.serializable.Contrato;
+import firstone.serializable.EstructureB;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -949,6 +949,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         interfazEnvioCliente.actualizar(this.tranca.getId_entorno());
+        interfazEnvioCliente.solicitarSincronizacion(tranca.getId_entorno());
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -1215,6 +1216,18 @@ public class Main extends javax.swing.JFrame implements EventClient {
             JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.INFORMATION_MESSAGE);
     }
 
+    private void llegoPaqueteSincronizacion(List<Object> obs)
+    {
+        SynchronizerNegocio synchronizerNegocio = new SynchronizerNegocio();
+        for (Object o : obs)
+        {
+            if (o instanceof EstructureB)
+            {
+                synchronizerNegocio.procesarEstructureB((EstructureB)o);
+            }
+        }
+    }
+    
     private void registrarBitacoraGuardia(String accion, String detalle) {
         Bitacora bitacora = new Bitacora();
         bitacora.setAccion(accion);
@@ -1222,6 +1235,11 @@ public class Main extends javax.swing.JFrame implements EventClient {
         bitacora.setDetalle(detalle);
         bitacora.setFecha_hora(new Date());
         bitacoraNegocio.registrarBitacora(bitacora);
+    }
+    
+    private void maximoId(Long last_id) {
+        Sincronizacion.prop.setProperty("ULTIMO_ID_SINCRONIZADO", ""+last_id);
+        Sincronizacion.save();
     }
 
     @Override
@@ -1242,6 +1260,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
         {
             case Accion.AVISO : llegoUnAviso((firstone.serializable.Aviso)ObjectUtil.createObject(contrato.getContenido())); break;
             case Accion.ALARMA : llegoUnaAlarma((firstone.serializable.Alarma)ObjectUtil.createObject(contrato.getContenido())); break;
+            case Accion.DOWNLOAD : llegoPaqueteSincronizacion((List<Object>)ObjectUtil.createObject(contrato.getContenido())); break;
+            case Accion.MAX_ID : maximoId((Long)ObjectUtil.createObject(contrato.getContenido()));
         }
     }
 
@@ -1249,4 +1269,6 @@ public class Main extends javax.swing.JFrame implements EventClient {
     public void onDisconnectCore(IOException e) {
         log.warn("El core se ha desconectado");
     }
+
+    
 }

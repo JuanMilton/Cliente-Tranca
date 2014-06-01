@@ -173,4 +173,42 @@ public class VisitaDAO {
             }
         }
     }
+    
+    public synchronized void insert(String ci, String nombre, String apellido) {
+        Connection con = null;
+        PreparedStatement st = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "INSERT INTO visita(ci,nombres,apellidos) VALUES(?,?,?)";
+
+            st = con.prepareStatement(sql);
+            if (st != null) {
+                st.setString(1, ci);
+                st.setString(2, nombre);
+                st.setString(3, apellido);
+                
+                st.execute();
+            }
+        } catch (SQLException e) {
+            log.error("Error al realizar la insercion en la base de datos", e);
+        } finally {
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+    }
 }

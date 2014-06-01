@@ -6,8 +6,6 @@
 package firstone.cliente.datos.dao;
 
 import firstone.cliente.datos.conexion.ServiceProvider;
-import firstone.cliente.datos.model.VehiculoVisita;
-import firstone.cliente.datos.model.Visita;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,33 +16,31 @@ import org.apache.log4j.Logger;
  *
  * @author Milton
  */
-public class VehiculoVisitaDAO {
+public class PropietarioVehiculoDAO {
 
-    private static final Logger log = Logger.getLogger(VehiculoVisitaDAO.class);
+    private static final Logger log = Logger.getLogger(PropietarioVehiculoDAO.class);
 
-    public synchronized VehiculoVisita get(String placa) {
-//        log.debug("obtener VehiculoVisita :: PLACA :" + placa);
+    public synchronized boolean existRelation(String ci, String placa) {
         Connection con = null;
         PreparedStatement st = null;
         ResultSet rs = null;
 
-        VehiculoVisita vehiculoVisita = null;
+        boolean result = false;
 
         try {
             con = ServiceProvider.openConnection();
 
-            String sql = "SELECT * FROM vehiculo_visita WHERE placa = ?";
+            String sql = "SELECT * FROM propietario_vehiculo WHERE ci = ? AND placa = ?";
             st = con.prepareStatement(sql);
 
             if (st != null) {
 
-                st.setString(1, placa);
+                st.setString(1, ci);
+                st.setString(2, placa);
                 rs = st.executeQuery();
 
                 if (rs.next()) {
-                    vehiculoVisita = new VehiculoVisita();
-                    vehiculoVisita.setPlaca(placa);
-                    vehiculoVisita.setMarca(rs.getString("marca"));
+                    result = true;
                 }
             }
 
@@ -75,79 +71,22 @@ public class VehiculoVisitaDAO {
                 log.error("Error al cerrar la conexion a la base de datos", e);
             }
         }
-        return vehiculoVisita;
-    }
-    
-    public synchronized firstone.serializable.VehiculoVisita getVehiculoVisitaSerializable(String placa) {
-//        log.debug("obtener VehiculoVisita :: PLACA :" + placa);
-        Connection con = null;
-        PreparedStatement st = null;
-        ResultSet rs = null;
-
-        firstone.serializable.VehiculoVisita vehiculoVisita = null;
-
-        try {
-            con = ServiceProvider.openConnection();
-
-            String sql = "SELECT * FROM vehiculo_visita WHERE placa = ?";
-            st = con.prepareStatement(sql);
-
-            if (st != null) {
-
-                st.setString(1, placa);
-                rs = st.executeQuery();
-
-                if (rs.next()) {
-                    vehiculoVisita = new firstone.serializable.VehiculoVisita();
-                    vehiculoVisita.setPlaca(placa);
-                    vehiculoVisita.setMarca(rs.getString("marca"));
-                }
-            }
-
-        } catch (SQLException e) {
-            log.error("Error al consultar a la base de datos", e);
-        } finally {
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-            } catch (SQLException e) {
-                log.error("Error al cerrar el ResultSet", e);
-            }
-
-            try {
-                if (st != null) {
-                    st.close();
-                }
-            } catch (SQLException e) {
-                log.error("Error al cerrar el Statement", e);
-            }
-
-            try {
-                if (con != null) {
-                    con.close();
-                }
-            } catch (SQLException e) {
-                log.error("Error al cerrar la conexion a la base de datos", e);
-            }
-        }
-        return vehiculoVisita;
+        return result;
     }
 
-    public synchronized void insert(VehiculoVisita vehiculoVisita) {
-        log.info("Guardar VehiculoVisita :: PLACA :" + vehiculoVisita.getPlaca());
+    public synchronized void insertRelation(String placa, String ci) {
         Connection con = null;
         PreparedStatement st = null;
 
         try {
             con = ServiceProvider.openConnection();
 
-            String sql = "INSERT INTO vehiculo_visita(placa,marca) VALUES(?,?)";
+            String sql = "INSERT INTO propietario_vehiculo(ci,placa) VALUES(?,?)";
 
             st = con.prepareStatement(sql);
             if (st != null) {
-                st.setString(1, vehiculoVisita.getPlaca());
-                st.setString(2, vehiculoVisita.getMarca());
+                st.setString(1, ci);
+                st.setString(2, placa);
                 
                 st.execute();
             }
@@ -172,19 +111,19 @@ public class VehiculoVisitaDAO {
         }
     }
     
-    public synchronized void insert(String placa, String marca) {
+    public synchronized void deleteRelation(String placa, String ci) {
         Connection con = null;
         PreparedStatement st = null;
 
         try {
             con = ServiceProvider.openConnection();
 
-            String sql = "INSERT INTO vehiculo_visita(placa,marca) VALUES(?,?)";
+            String sql = "DELETE FROM propietario_vehiculo WHERE ci = ? AND placa = ?";
 
             st = con.prepareStatement(sql);
             if (st != null) {
-                st.setString(1, placa);
-                st.setString(2, marca);
+                st.setString(1, ci);
+                st.setString(2, placa);
                 
                 st.execute();
             }
