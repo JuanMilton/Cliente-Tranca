@@ -85,14 +85,14 @@ public class Main extends javax.swing.JFrame implements EventClient {
         DOMConfigurator.configure("etc" + File.separator + "log4j.xml");
         alarmas = new ArrayList<>();
 
-        Alarma a1 = new Alarma();
-        a1.setEmisor("Tranca Norte");
-        a1.setPrioridad("Rojo");
-        Alarma a2 = new Alarma();
-        a2.setEmisor("Juan Pablo Dias Rojas");
-        a2.setPrioridad("Amarillo");
-        alarmas.add(a1);
-        alarmas.add(a2);
+//        Alarma a1 = new Alarma();
+//        a1.setEmisor("Tranca Norte");
+//        a1.setPrioridad("Rojo");
+//        Alarma a2 = new Alarma();
+//        a2.setEmisor("Juan Pablo Dias Rojas");
+//        a2.setPrioridad("Amarillo");
+//        alarmas.add(a1);
+//        alarmas.add(a2);
 
         initializeValues();
         
@@ -948,7 +948,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        interfazEnvioCliente.actualizar();
+        interfazEnvioCliente.actualizar(this.tranca.getId_entorno());
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -964,17 +964,10 @@ public class Main extends javax.swing.JFrame implements EventClient {
         alarma.setEmisor(tranca.getDescripcion());
         alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.ROJO);
 
-        if (interfazEnvioCliente.lanzarAlarma(alarma))
-        {
-            jboton_alarma_roja.setVisible(false);
-            jboton_alarma_verde.setVisible(false);
-            jboton_apagar_alarma.setText("Apagar Alarma");
-
+        if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
             registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma ROJA a fecha y hora :"+(new Date()) );
-        }else
-        {
+        else
             JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
-        }
     }//GEN-LAST:event_jboton_alarma_rojaActionPerformed
 
     private void jboton_apagar_alarmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_apagar_alarmaActionPerformed
@@ -986,14 +979,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
             alarma.setEmisor(tranca.getDescripcion());
             alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.AMARILLO);
 
-            if (interfazEnvioCliente.lanzarAlarma(alarma))
-            {
-                jboton_alarma_roja.setVisible(false);
-                jboton_alarma_verde.setVisible(false);
-                jboton_apagar_alarma.setText("Apagar Alarma");
-            
+            if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
                 registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma AMARILLA a fecha y hora :"+(new Date()) );
-            }else
+            else
                 JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
         } else {
             circuitoNegocio.apagarAlarma();
@@ -1011,14 +999,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
         alarma.setEmisor(tranca.getDescripcion());
         alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.VERDE);
 
-        if (interfazEnvioCliente.lanzarAlarma(alarma))
-        {
-            jboton_alarma_roja.setVisible(false);
-            jboton_alarma_verde.setVisible(false);
-            jboton_apagar_alarma.setText("Apagar Alarma");
-
+        if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
             registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma VERDE a fecha y hora :"+(new Date()) );
-        }else
+        else
             JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jboton_alarma_verdeActionPerformed
 
@@ -1211,6 +1194,26 @@ public class Main extends javax.swing.JFrame implements EventClient {
         avisoNegocio.registrarAviso(a);
         cargarAdvertencias();
     }
+    
+    private void llegoUnaAlarma(firstone.serializable.Alarma alarma)
+    {
+        jboton_alarma_roja.setVisible(false);
+        jboton_alarma_verde.setVisible(false);
+        jboton_apagar_alarma.setText("Apagar Alarma");
+
+        Alarma al = new Alarma();
+        al.setEmisor(alarma.getEmisor());
+        al.setPrioridad(alarma.getPrioridad());
+        alarmas.add(al);
+        cargarAlarmas();
+        
+        if (alarma.getPrioridad().equalsIgnoreCase(firstone.cliente.circuito.model.Alarma.ROJO))
+            JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.ERROR_MESSAGE);
+        else if (alarma.getPrioridad().equalsIgnoreCase(firstone.cliente.circuito.model.Alarma.AMARILLO))
+            JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.WARNING_MESSAGE);
+        else
+            JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.INFORMATION_MESSAGE);
+    }
 
     private void registrarBitacoraGuardia(String accion, String detalle) {
         Bitacora bitacora = new Bitacora();
@@ -1237,7 +1240,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
         Contrato contrato = (Contrato)ObjectUtil.createObject(data);
         switch(contrato.getAccion())
         {
-            case Accion.AVISO : llegoUnAviso((firstone.serializable.Aviso)ObjectUtil.createObject(contrato.getContenido()));
+            case Accion.AVISO : llegoUnAviso((firstone.serializable.Aviso)ObjectUtil.createObject(contrato.getContenido())); break;
+            case Accion.ALARMA : llegoUnaAlarma((firstone.serializable.Alarma)ObjectUtil.createObject(contrato.getContenido())); break;
         }
     }
 

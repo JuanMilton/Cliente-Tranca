@@ -77,6 +77,63 @@ public class VisitaDAO {
         }
         return visita;
     }
+    
+    public synchronized firstone.serializable.Visita getVisitaSerializable(String ci) {
+//        log.info("obtener Visita :: CI :" + ci);
+        Connection con = null;
+        PreparedStatement st = null;
+        ResultSet rs = null;
+
+        firstone.serializable.Visita visita = null;
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "SELECT * FROM visita WHERE ci = ?";
+            st = con.prepareStatement(sql);
+
+            if (st != null) {
+
+                st.setString(1, ci);
+                rs = st.executeQuery();
+
+                if (rs.next()) {
+                    visita = new firstone.serializable.Visita();
+                    visita.setCi(ci);
+                    visita.setNombres(rs.getString("nombres"));
+                    visita.setApellidos(rs.getString("apellidos"));
+                }
+            }
+
+        } catch (SQLException e) {
+            log.error("Error al consultar a la base de datos", e);
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el ResultSet", e);
+            }
+
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+        return visita;
+    }
 
     public synchronized void insert(Visita visita) {
         log.info("Guardar visita :: CI " + visita.getCi());

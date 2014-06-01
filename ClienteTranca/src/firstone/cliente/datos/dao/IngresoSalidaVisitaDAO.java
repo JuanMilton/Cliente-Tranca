@@ -7,6 +7,8 @@ package firstone.cliente.datos.dao;
 
 import firstone.cliente.datos.conexion.ServiceProvider;
 import firstone.cliente.datos.model.Propietario;
+import firstone.serializable.IngresoSalida;
+import firstone.serializable.IngresoSalidaVisita;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -63,5 +65,73 @@ public class IngresoSalidaVisitaDAO {
                 log.error("Error al cerrar la conexion a la base de datos", e);
             }
         }
+    }
+        
+    public List<IngresoSalidaVisita> obtenerIngresosSalidasVisita()
+    {
+        log.info("Obteniendo todas los ingresos y salidas de las visitas realizados");
+        Connection con = null;
+        PreparedStatement st = null;
+        ResultSet rs = null;
+
+        List<IngresoSalidaVisita> ss = new ArrayList<>();
+
+        try {
+            con = ServiceProvider.openConnection();
+
+            String sql = "SELECT * FROM ingreso_salida_visita";
+            st = con.prepareStatement(sql);
+
+            if (st != null) {
+                rs = st.executeQuery();
+
+                while (rs.next()) {
+                    
+                    IngresoSalidaVisita s = new IngresoSalidaVisita();
+                    s.setFecha_hora(rs.getTimestamp("fecha_hora").getTime());
+                    s.setId_tranca(rs.getInt("ref_id_tranca"));
+                    s.setPlaca(rs.getString("ref_placa_vehiculo_visita"));
+                    s.setTipo(rs.getString("tipo"));
+                    
+                    ss.add(s);
+                }
+            }
+            st.close();
+            
+            sql = "TRUNCATE TABLE ingreso_salida_visita";
+            st = con.prepareStatement(sql);
+            if (st != null)
+            {
+                st.execute();
+            }
+
+        } catch (SQLException e) {
+            log.error("Error al consultar a la base de datos", e);
+        } finally {
+            try {
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el ResultSet", e);
+            }
+
+            try {
+                if (st != null) {
+                    st.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar el Statement", e);
+            }
+
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e) {
+                log.error("Error al cerrar la conexion a la base de datos", e);
+            }
+        }
+        return ss;
     }
 }

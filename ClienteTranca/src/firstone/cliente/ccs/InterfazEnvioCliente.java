@@ -11,9 +11,11 @@ import com.firstonesoft.client.event.EventClient;
 import com.firstonesoft.client.util.ObjectUtil;
 import firstone.serializable.Aviso;
 import firstone.cliente.datos.model.Alarma;
+import firstone.cliente.negocio.SynchronizerNegocio;
 import firstone.serializable.Contrato;
 import firstone.serializable.Guardia;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,9 +32,12 @@ public class InterfazEnvioCliente implements EventClient {
     private Map<String,Object> keys;
     
     private String ci_guardia;
+    private SynchronizerNegocio synchronizerNegocio;
     
     public InterfazEnvioCliente(Client client, String ci_guardia)
     {
+        this.synchronizerNegocio = new SynchronizerNegocio();
+        
         this.ci_guardia = ci_guardia;
         this.cliente = client;
     }
@@ -58,14 +63,38 @@ public class InterfazEnvioCliente implements EventClient {
         return false;
     }
     
-    public boolean lanzarAlarma(Alarma alarma)
+    public boolean lanzarAlarma(Alarma alarma, int id_entorno)
     {
-        return true;
+        firstone.serializable.Alarma al = new firstone.serializable.Alarma();
+        al.setEmisor(alarma.getEmisor());
+        al.setPrioridad(alarma.getPrioridad());
+
+        Contrato contrato = new Contrato();
+        contrato.setAccion(Accion.ALARMA);
+        contrato.setContenido(ObjectUtil.createBytes(al));
+        contrato.setId_entorno(id_entorno);
+        try {
+            cliente.sendPackage(ObjectUtil.createBytes(contrato));
+            return true;
+        } catch (IOException ex) {
+            log.error("Error al enviar la Alarma",ex);
+        }
+        return false;
     }
     
-    public void actualizar()
+    public void actualizar(int id_entorno)
     {
-        
+        List<Object> paquete = synchronizerNegocio.obtenerDatosASubir();
+        Contrato contrato = new Contrato();
+        contrato.setAccion(Accion.UPDATE);
+        contrato.setContenido(ObjectUtil.createBytes(paquete));
+        contrato.setId_entorno(id_entorno);
+        try {
+            if (cliente.isConnected())
+                cliente.sendPackage(ObjectUtil.createBytes(contrato));
+        } catch (IOException ex) {
+            log.error("No se pudo subir la informacion al Core ",ex);
+        }
     }
     
     public void solicitarTrancas()

@@ -65,7 +65,7 @@ public class SynchronizerDAO {
         }
     }
     
-    public static List<Synchronizer> obtenerTransacciones()
+    public List<Synchronizer> obtenerTransacciones()
     {
         log.info("Obteniendo todas las ultimas transacciones realizadas");
         Connection con = null;
@@ -132,12 +132,12 @@ public class SynchronizerDAO {
         return ss;
     }
     
-    public static void main(String[] args) {
-        List<Synchronizer> ss = obtenerTransacciones();
-        
-        for (Synchronizer s : ss)
-        {
-            System.out.println("" + s.getRef_id());
-        }
-    }
+//    public static void main(String[] args) {
+//        List<Synchronizer> ss = obtenerTransacciones();
+//        
+//        for (Synchronizer s : ss)
+//        {
+//            System.out.println("" + s.getRef_id());
+//        }
+//    }
 }

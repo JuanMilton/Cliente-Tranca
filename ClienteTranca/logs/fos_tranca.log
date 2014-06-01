@@ -1436,3 +1436,392 @@ org.postgresql.util.PSQLException: The column name from was not found in this Re
 [INFO ,2014-05-31 14:08:40,485 63,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :HELLO WORLD
 [INFO ,2014-05-31 14:08:55,130 14708,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Aviso
 [WARN ,2014-05-31 14:11:35,386 174964,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 14:46:41,787 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:46:41 BOT 2014
+[INFO ,2014-05-31 14:46:41,787 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:46:41,796 9,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:46:41,899 112,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:46:46,753 4966,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:46:46 BOT 2014
+[INFO ,2014-05-31 14:46:46,754 4967,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:46:48,001 6214,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:46:48 BOT 2014
+[INFO ,2014-05-31 14:46:48,002 6215,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:46:48,002 6215,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:46:48,120 6333,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:46:52,249 10462,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:46:52 BOT 2014
+[INFO ,2014-05-31 14:46:52,250 10463,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:46:53,409 11622,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:46:53 BOT 2014
+[INFO ,2014-05-31 14:46:53,409 11622,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:46:53,410 11623,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:46:53,477 11690,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:46:59,242 17455,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:46:59 BOT 2014
+[INFO ,2014-05-31 14:46:59,242 17455,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-05-31 14:47:08,294 26507,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 14:49:17,041 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:49:17 BOT 2014
+[INFO ,2014-05-31 14:49:17,041 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:49:17,048 7,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:49:17,161 120,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:49:21,128 4087,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:49:21 BOT 2014
+[INFO ,2014-05-31 14:49:21,128 4087,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:49:23,664 6623,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:49:23 BOT 2014
+[INFO ,2014-05-31 14:49:23,664 6623,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:49:23,665 6624,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:49:23,759 6718,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:49:26,152 9111,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:49:26 BOT 2014
+[INFO ,2014-05-31 14:49:26,152 9111,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:49:27,775 10734,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:49:27 BOT 2014
+[INFO ,2014-05-31 14:49:27,776 10735,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:49:27,776 10735,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:49:27,852 10811,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:49:30,672 13631,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:49:30 BOT 2014
+[INFO ,2014-05-31 14:49:30,672 13631,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:49:35,329 18288,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:49:35 BOT 2014
+[INFO ,2014-05-31 14:49:35,329 18288,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:49:35,330 18289,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:49:35,653 18612,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:49:38,144 21103,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:49:38 BOT 2014
+[INFO ,2014-05-31 14:49:38,145 21104,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-05-31 14:49:39,865 22824,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 14:50:02,929 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:50:02 BOT 2014
+[INFO ,2014-05-31 14:50:02,929 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:50:02,941 12,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:50:03,060 131,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:50:06,640 3711,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:50:06 BOT 2014
+[INFO ,2014-05-31 14:50:06,640 3711,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:50:07,400 4471,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:50:07 BOT 2014
+[INFO ,2014-05-31 14:50:07,400 4471,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:50:07,401 4472,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:50:07,522 4593,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 14:50:09,600 6671,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 14:50:09 BOT 2014
+[INFO ,2014-05-31 14:50:09,600 6671,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 14:50:10,856 7927,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 14:50:10 BOT 2014
+[INFO ,2014-05-31 14:50:10,856 7927,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 14:50:10,857 7928,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 14:50:10,928 7999,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-05-31 14:50:12,980 10051,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-05-31 16:03:44,401 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:43:28,193 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:43:28,195 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:43:28,221 28,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :1234ABC
+[INFO ,2014-05-31 16:43:28,301 108,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 4920550
+[INFO ,2014-05-31 16:43:28,341 148,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:43:28,369 176,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:43:28,424 231,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:43:28 BOT 2014
+[ERROR,2014-05-31 16:43:28,454 261,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: la columna «tipo» es de tipo integer pero la expresión es de tipo character varying
+  Hint: Necesitará reescribir la expresión o aplicarle una conversión de tipo.
+  Position: 99
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.IngresoSalidaVisitaDAO.insert(IngresoSalidaVisitaDAO.java:45)
+	at firstone.cliente.negocio.IngresoSalidaVisitaNegocio.registrarIngresoSalida(IngresoSalidaVisitaNegocio.java:27)
+	at firstone.cliente.presentacion.Main.jButton6ActionPerformed(Main.java:876)
+	at firstone.cliente.presentacion.Main.access$600(Main.java:54)
+	at firstone.cliente.presentacion.Main$7.actionPerformed(Main.java:567)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[INFO ,2014-05-31 16:43:28,457 264,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:47:28,900 240707,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:48:48,759 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:48:48,761 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:48:48,810 51,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:48:48,832 73,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:48:48 BOT 2014
+[INFO ,2014-05-31 16:48:48,855 96,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:49:57,374 68615,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:55:44,780 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:44,782 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:44,837 57,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:44,857 77,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:44 BOT 2014
+[INFO ,2014-05-31 16:55:44,878 98,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:55:47,491 2711,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:47,492 2712,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:47,544 2764,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:47,564 2784,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:47 BOT 2014
+[INFO ,2014-05-31 16:55:47,586 2806,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:55:48,915 4135,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:48,915 4135,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:48,969 4189,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:48,989 4209,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:48 BOT 2014
+[INFO ,2014-05-31 16:55:49,010 4230,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:55:50,227 5447,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:50,227 5447,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:50,281 5501,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:50,301 5521,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:50 BOT 2014
+[INFO ,2014-05-31 16:55:50,325 5545,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:55:52,027 7247,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:52,027 7247,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:52,078 7298,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:52,097 7317,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:52 BOT 2014
+[INFO ,2014-05-31 16:55:52,119 7339,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:55:53,202 8422,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:55:53,204 8424,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:55:53,257 8477,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:55:53,276 8496,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:55:53 BOT 2014
+[INFO ,2014-05-31 16:55:53,298 8518,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:55:54,818 10038,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:56:40,876 1,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:56:40,877 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:56:40,932 57,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:56:40,955 80,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:56:40 BOT 2014
+[INFO ,2014-05-31 16:56:40,977 102,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:56:42,082 1207,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:56:42,083 1208,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:56:42,135 1260,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:56:42,156 1281,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:56:42 BOT 2014
+[INFO ,2014-05-31 16:56:42,177 1302,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:56:43,657 2782,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:58:04,435 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:58:04,437 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:58:04,486 51,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:58:04,506 71,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:58:04 BOT 2014
+[INFO ,2014-05-31 16:58:04,528 93,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:58:05,938 1503,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:58:05,939 1504,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:58:05,996 1561,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:58:06,016 1581,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:58:06 BOT 2014
+[INFO ,2014-05-31 16:58:06,043 1608,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:58:07,448 3013,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 16:59:26,073 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:59:26,075 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:59:26,114 41,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:59:26,133 60,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:59:26 BOT 2014
+[INFO ,2014-05-31 16:59:26,154 81,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 16:59:28,705 2632,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920550
+[DEBUG,2014-05-31 16:59:28,705 2632,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 1234ABC
+[INFO ,2014-05-31 16:59:28,756 2683,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920550 :: PLACA :1234ABC
+[INFO ,2014-05-31 16:59:28,776 2703,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 16:59:28 BOT 2014
+[INFO ,2014-05-31 16:59:28,796 2723,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 16:59:46,143 20070,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 17:01:12,798 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 123456
+[DEBUG,2014-05-31 17:01:12,800 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 123ABC
+[INFO ,2014-05-31 17:01:12,834 36,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :123ABC
+[INFO ,2014-05-31 17:01:12,895 97,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 123456
+[INFO ,2014-05-31 17:01:12,938 140,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :123456 :: PLACA :123ABC
+[INFO ,2014-05-31 17:01:12,960 162,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :123456 :: PLACA :123ABC
+[INFO ,2014-05-31 17:01:13,000 202,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :123ABC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:01:13 BOT 2014
+[INFO ,2014-05-31 17:01:13,034 236,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[WARN ,2014-05-31 17:01:15,572 2774,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 17:37:09,411 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 543321
+[DEBUG,2014-05-31 17:37:09,416 5,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 234SZD
+[INFO ,2014-05-31 17:37:09,445 34,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :234SZD
+[INFO ,2014-05-31 17:37:09,508 97,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 543321
+[INFO ,2014-05-31 17:37:09,546 135,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :543321 :: PLACA :234SZD
+[INFO ,2014-05-31 17:37:09,564 153,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :543321 :: PLACA :234SZD
+[INFO ,2014-05-31 17:37:09,607 196,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :234SZD :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:37:09 BOT 2014
+[INFO ,2014-05-31 17:37:09,634 223,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[DEBUG,2014-05-31 17:37:28,841 19430,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 987654
+[DEBUG,2014-05-31 17:37:28,842 19431,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 345LLS
+[INFO ,2014-05-31 17:37:28,876 19465,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :345LLS
+[INFO ,2014-05-31 17:37:28,938 19527,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 987654
+[INFO ,2014-05-31 17:37:28,975 19564,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :987654 :: PLACA :345LLS
+[INFO ,2014-05-31 17:37:28,998 19587,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :987654 :: PLACA :345LLS
+[INFO ,2014-05-31 17:37:29,041 19630,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :345LLS :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:37:29 BOT 2014
+[INFO ,2014-05-31 17:37:29,061 19650,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 17:37:40,221 30810,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Aviso
+[INFO ,2014-05-31 17:37:40,299 30888,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 17:37:40,300 30889,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :asdgadfhg
+[INFO ,2014-05-31 17:40:32,128 202717,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Aviso
+[INFO ,2014-05-31 17:40:47,912 218501,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Aviso
+[INFO ,2014-05-31 17:41:04,472 235061,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Aviso
+[INFO ,2014-05-31 17:41:04,522 235111,firstone.cliente.presentacion.Main,Thread-6] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 17:41:04,523 235112,firstone.cliente.datos.dao.AvisoDAO,Thread-6] Guardar Aviso :: DESCRIPCION :dgdgdgdgdgdgdgdgdgdg
+[INFO ,2014-05-31 17:41:54,808 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:41:54,968 160,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 17:46:37,271 282463,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 17:47:10,998 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 789456
+[DEBUG,2014-05-31 17:47:11,000 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 543ZXC
+[INFO ,2014-05-31 17:47:11,034 36,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :543ZXC
+[INFO ,2014-05-31 17:47:11,095 97,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 789456
+[INFO ,2014-05-31 17:47:11,137 139,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :789456 :: PLACA :543ZXC
+[INFO ,2014-05-31 17:47:11,159 161,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :789456 :: PLACA :543ZXC
+[INFO ,2014-05-31 17:47:11,200 202,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :543ZXC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:47:11 BOT 2014
+[INFO ,2014-05-31 17:47:11,226 228,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 17:47:19,012 8014,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:47:19,209 8211,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[DEBUG,2014-05-31 17:49:27,785 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 148735
+[DEBUG,2014-05-31 17:49:27,786 1,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 985AZZ
+[INFO ,2014-05-31 17:49:27,809 24,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :985AZZ
+[INFO ,2014-05-31 17:49:27,878 93,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 148735
+[INFO ,2014-05-31 17:49:27,922 137,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :148735 :: PLACA :985AZZ
+[INFO ,2014-05-31 17:49:27,943 158,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :148735 :: PLACA :985AZZ
+[INFO ,2014-05-31 17:49:27,985 200,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :985AZZ :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:49:27 BOT 2014
+[INFO ,2014-05-31 17:49:28,011 226,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 17:49:33,131 5346,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:49:33,223 5438,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 17:51:17,723 109938,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 17:51:47,973 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 321654
+[DEBUG,2014-05-31 17:51:47,975 2,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 987SIN
+[INFO ,2014-05-31 17:51:48,005 32,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :987SIN
+[INFO ,2014-05-31 17:51:48,079 106,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 321654
+[INFO ,2014-05-31 17:51:48,125 152,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :321654 :: PLACA :987SIN
+[INFO ,2014-05-31 17:51:48,146 173,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :321654 :: PLACA :987SIN
+[INFO ,2014-05-31 17:51:48,190 217,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :987SIN :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 17:51:48 BOT 2014
+[INFO ,2014-05-31 17:51:48,218 245,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 17:51:50,274 2301,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:51:50,397 2424,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 17:53:42,683 1,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:53:42,764 82,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 17:55:19,507 96825,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 17:56:35,521 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:56:35,605 84,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 17:57:33,914 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 17:57:34,045 131,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 18:20:57,999 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 18:20:58,103 104,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 18:21:15,560 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 18:21:15 BOT 2014
+[INFO ,2014-05-31 18:21:15,560 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 18:30:56,795 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 18:30:56 BOT 2014
+[INFO ,2014-05-31 18:30:56,796 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 18:30:58,698 1903,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 18:30:58 BOT 2014
+[INFO ,2014-05-31 18:30:58,698 1903,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 18:37:42,463 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sat May 31 18:37:42 BOT 2014
+[INFO ,2014-05-31 18:37:42,463 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-05-31 18:37:42,469 6,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Lanzar Alarma
+[INFO ,2014-05-31 18:37:42,596 133,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-05-31 18:37:45,048 2585,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sat May 31 18:37:45 BOT 2014
+[INFO ,2014-05-31 18:37:45,048 2585,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-05-31 18:37:47,576 5113,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 18:37:47,679 5216,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 18:39:27,992 105529,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 18:56:06,809 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 18:56:06,901 92,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 18:56:26,044 19235,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 18:56:30,711 23902,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 18:56:30,794 23985,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[ERROR,2014-05-31 18:56:30,876 24067,firstone.cliente.ccs.InterfazEnvioCliente,AWT-EventQueue-0] No se pudo subir la informacion al Core 
+java.net.SocketException: Socket closed
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:116)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:153)
+	at java.io.DataOutputStream.writeLong(DataOutputStream.java:224)
+	at com.firstonesoft.client.Sender.sendBytes(Sender.java:28)
+	at com.firstonesoft.client.Client.sendPackage(Client.java:185)
+	at firstone.cliente.ccs.InterfazEnvioCliente.actualizar(InterfazEnvioCliente.java:94)
+	at firstone.cliente.presentacion.Main.jButton9ActionPerformed(Main.java:951)
+	at firstone.cliente.presentacion.Main.access$1100(Main.java:54)
+	at firstone.cliente.presentacion.Main$12.actionPerformed(Main.java:687)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[INFO ,2014-05-31 18:56:54,096 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 18:56:54,209 113,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 18:57:18,276 24180,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 19:06:14,933 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 369852
+[DEBUG,2014-05-31 19:06:14,936 3,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 453ZZZ
+[INFO ,2014-05-31 19:06:14,965 32,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :453ZZZ
+[INFO ,2014-05-31 19:06:15,024 91,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 369852
+[INFO ,2014-05-31 19:06:15,065 132,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :369852 :: PLACA :453ZZZ
+[INFO ,2014-05-31 19:06:15,084 151,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :369852 :: PLACA :453ZZZ
+[INFO ,2014-05-31 19:06:15,127 194,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :453ZZZ :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 19:06:15 BOT 2014
+[INFO ,2014-05-31 19:06:15,154 221,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 19:06:18,876 3943,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 19:06:19,040 4107,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 19:07:11,712 56779,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 19:11:31,225 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 321987
+[DEBUG,2014-05-31 19:11:31,226 1,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 654BAC
+[INFO ,2014-05-31 19:11:31,247 22,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :654BAC
+[INFO ,2014-05-31 19:11:31,311 86,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 321987
+[INFO ,2014-05-31 19:11:31,358 133,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :321987 :: PLACA :654BAC
+[INFO ,2014-05-31 19:11:31,382 157,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :321987 :: PLACA :654BAC
+[INFO ,2014-05-31 19:11:31,432 207,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :654BAC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 19:11:31 BOT 2014
+[INFO ,2014-05-31 19:11:31,462 237,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 19:11:33,945 2720,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 19:11:34,063 2838,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 19:41:18,967 1,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 19:41:19,067 101,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[DEBUG,2014-05-31 19:42:16,089 57123,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 1485321
+[DEBUG,2014-05-31 19:42:16,091 57125,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 666ZZZ
+[INFO ,2014-05-31 19:42:16,129 57163,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :666ZZZ
+[INFO ,2014-05-31 19:42:16,191 57225,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 1485321
+[INFO ,2014-05-31 19:42:16,232 57266,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :1485321 :: PLACA :666ZZZ
+[INFO ,2014-05-31 19:42:16,252 57286,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :1485321 :: PLACA :666ZZZ
+[INFO ,2014-05-31 19:42:16,292 57326,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :666ZZZ :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 19:42:16 BOT 2014
+[INFO ,2014-05-31 19:42:16,325 57359,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 19:42:19,836 60870,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 19:42:19,970 61004,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[WARN ,2014-05-31 19:54:41,147 802181,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-05-31 20:00:42,693 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 20:00:42,786 93,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 20:00:42,854 161,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-05-31 20:00:42,913 220,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[WARN ,2014-05-31 20:02:12,123 89430,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-05-31 20:05:32,003 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 543321
+[DEBUG,2014-05-31 20:05:32,006 3,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 4321BCC
+[INFO ,2014-05-31 20:05:32,036 33,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :4321BCC
+[INFO ,2014-05-31 20:05:32,099 96,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :543321 :: PLACA :4321BCC
+[INFO ,2014-05-31 20:05:32,117 114,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :543321 :: PLACA :4321BCC
+[INFO ,2014-05-31 20:05:32,157 154,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :4321BCC :: TIPO :INGRESO :: FECHA_HORA :Sat May 31 20:05:32 BOT 2014
+[INFO ,2014-05-31 20:05:32,179 176,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :777777 :: ACCION :Registro de Visita
+[INFO ,2014-05-31 20:05:36,210 4207,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-05-31 20:05:36,345 4342,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-05-31 20:05:36,395 4392,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-05-31 20:05:36,460 4457,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[WARN ,2014-05-31 20:07:15,038 103035,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado

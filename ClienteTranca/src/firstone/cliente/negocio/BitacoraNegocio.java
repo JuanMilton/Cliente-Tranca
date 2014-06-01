@@ -8,6 +8,7 @@ package firstone.cliente.negocio;
 
 import firstone.cliente.datos.dao.BitacoraDAO;
 import firstone.cliente.datos.model.Bitacora;
+import java.util.List;
 
 /**
  *
@@ -25,6 +26,11 @@ public class BitacoraNegocio {
     public void registrarBitacora(Bitacora bitacora)
     {
         bitacoraDao.insert(bitacora);
+    }
+    
+    public List<firstone.serializable.Bitacora> obtenerTodaBitacoraTruncate()
+    {
+        return bitacoraDao.obtenerBitacora();
     }
     
 }

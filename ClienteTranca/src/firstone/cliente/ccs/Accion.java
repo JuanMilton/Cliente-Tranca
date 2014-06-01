@@ -14,5 +14,7 @@ public class Accion {
     
     public static final byte AUTENTICAR_ADMINISTRADOR   = 0;
     public static final byte AVISO                      = 1;
+    public static final byte ALARMA                     = 2;
+    public static final byte UPDATE                     = 3;
     
 }
