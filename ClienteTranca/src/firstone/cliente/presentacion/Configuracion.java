@@ -232,4 +232,9 @@ public class Configuracion extends javax.swing.JFrame implements EventConfigurac
         else
             JOptionPane.showMessageDialog(rootPane, "Correo Electrónico o Contraseña, o tal vez tenga que gestionar Guardias y Trancas desde la Web de Administracion", "Configurando a IdentiFour", JOptionPane.WARNING_MESSAGE);
     }
+
+    @Override
+    public void licenciaInactiva() {
+        JOptionPane.showMessageDialog(rootPane, "Licencia Inactiva", "La licencia de acceso a nuestros servidores esta desactivado, por favor cualquier duda comunicarse con Soporte       www.identifour.com", JOptionPane.ERROR_MESSAGE);
+    }
 }

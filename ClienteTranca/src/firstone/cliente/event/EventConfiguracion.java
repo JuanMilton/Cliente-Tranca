@@ -16,5 +16,6 @@ import java.util.List;
 public interface EventConfiguracion {
     
     public void autenticacionAdministrador(List<Tranca> trancas, int id_entorno);
+    public void licenciaInactiva();
     
 }

@@ -32,6 +32,8 @@ public class Parametros {
         public static String CORE_IP                        = prop.getProperty("CORE.IP");
         public static Integer CORE_PORT                     = Integer.parseInt(prop.getProperty("CORE.PORT"));
         
+        public static Boolean DEBUG_CIRCUITO                 = new Boolean(prop.getProperty("debug.circuito"));
+        
 	/** flujo de entrada relacionado con el archivo de configuracion */
 	private static InputStream configFileStream;
 

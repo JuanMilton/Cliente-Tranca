@@ -91,9 +91,9 @@ public class InterfazConfiguracion implements EventClient {
     
     private void autenticacionAdministrador(byte[] contenido, int id_entorno)
     {
-        Object o = ObjectUtil.createObject(contenido);
-        if (o != null)
+        if (contenido != null)
         {
+            Object o = ObjectUtil.createObject(contenido);
             List<Tranca> trancas = (List<Tranca>) o;
             eventConfiguracion.autenticacionAdministrador(trancas,id_entorno);
         }else
@@ -124,6 +124,7 @@ public class InterfazConfiguracion implements EventClient {
         {
             case Accion.AUTENTICAR_ADMINISTRADOR: autenticacionAdministrador(contrato.getContenido(), contrato.getId_entorno()); break;
             case Accion.GUARDIAS: guardiasExistentes(contrato.getContenido(), contrato.getId_entorno()); break;
+            case Accion.LICENCIA_INACTIVA : eventConfiguracion.licenciaInactiva();
         }
     }
 

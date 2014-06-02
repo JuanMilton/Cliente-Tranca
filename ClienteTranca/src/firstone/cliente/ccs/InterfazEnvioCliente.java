@@ -14,6 +14,7 @@ import firstone.cliente.datos.model.Alarma;
 import firstone.cliente.negocio.SynchronizerNegocio;
 import firstone.cliente.util.Sincronizacion;
 import firstone.serializable.Contrato;
+import firstone.serializable.Notificacion;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -71,6 +72,20 @@ public class InterfazEnvioCliente implements EventClient {
         contrato.setAccion(Accion.ALARMA);
         contrato.setContenido(ObjectUtil.createBytes(al));
         contrato.setId_entorno(id_entorno);
+        try {
+            cliente.sendPackage(ObjectUtil.createBytes(contrato));
+            return true;
+        } catch (IOException ex) {
+            log.error("Error al enviar la Alarma",ex);
+        }
+        return false;
+    }
+    
+    public boolean lanzarNotificacion(Notificacion notifi)
+    {
+        Contrato contrato = new Contrato();
+        contrato.setAccion(Accion.NOTIFICACION);
+        contrato.setContenido(ObjectUtil.createBytes(notifi));
         try {
             cliente.sendPackage(ObjectUtil.createBytes(contrato));
             return true;

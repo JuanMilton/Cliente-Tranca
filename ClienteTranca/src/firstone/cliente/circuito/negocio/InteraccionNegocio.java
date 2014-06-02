@@ -8,6 +8,7 @@ package firstone.cliente.circuito.negocio;
 import firstone.cliente.circuito.InterfazCircuito;
 import firstone.cliente.circuito.model.Sensor;
 import firstone.cliente.datos.dao.AvisoDAO;
+import firstone.cliente.util.Parametros;
 import java.util.Date;
 
 /**
@@ -28,7 +29,8 @@ public class InteraccionNegocio {
     public void dejarPasarVehiculo()
     {
         log.info("[CIRCUITO] Dejar Pasar Vehiculo " + (new Date()));
-        
+        if (Parametros.DEBUG_CIRCUITO)
+            return;
         interfazCircuito.levantarTranca();
         while (interfazCircuito.leerSensor() == Sensor.NO_HAY_VEHICULO)
         {

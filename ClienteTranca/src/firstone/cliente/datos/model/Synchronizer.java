@@ -21,6 +21,7 @@ public class Synchronizer {
     public static final String TABLE_PROPIETARIO_VEHICULO = "propietario_vehiculo";
     public static final String TABLE_TELEFONO_PROPIETARIO = "telefono_propietario";
     public static final String TABLE_VEHICULO = "vehiculo";
+    public static final String TABLE_TRANCA = "tranca";
     
     private String transaccion;
     private String ref_id;

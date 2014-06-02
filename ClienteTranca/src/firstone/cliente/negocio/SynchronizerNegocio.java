@@ -14,10 +14,12 @@ import firstone.cliente.datos.dao.PropietarioDAO;
 import firstone.cliente.datos.dao.PropietarioVehiculoDAO;
 import firstone.cliente.datos.dao.SynchronizerDAO;
 import firstone.cliente.datos.dao.TelefonoDAO;
+import firstone.cliente.datos.dao.TrancaDAO;
 import firstone.cliente.datos.dao.VehiculoDAO;
 import firstone.cliente.datos.dao.VehiculoVisitaDAO;
 import firstone.cliente.datos.dao.VisitaDAO;
 import firstone.cliente.datos.dao.VisitaVehiculoDAO;
+import firstone.cliente.datos.model.Tranca;
 import firstone.serializable.EstructureA;
 import firstone.serializable.EstructureB;
 import firstone.serializable.Guardia;
@@ -47,6 +49,7 @@ public class SynchronizerNegocio {
     VehiculoDAO vehiculoDao;
     PropietarioVehiculoDAO propietarioVehiculoDao;
     GuardiaDAO guardiaDao;
+    TrancaDAO trancaDao;
     
     public SynchronizerNegocio()
     {
@@ -62,6 +65,7 @@ public class SynchronizerNegocio {
         vehiculoDao = new VehiculoDAO();
         propietarioVehiculoDao = new PropietarioVehiculoDAO();
         guardiaDao = new GuardiaDAO();
+        trancaDao = new TrancaDAO();
     }
     
     public List<Object> obtenerDatosASubir()
@@ -123,7 +127,7 @@ public class SynchronizerNegocio {
         System.out.println(sn.obtenerDatosASubir().size());
     }
 
-    public void procesarEstructureB(EstructureB trama) {
+    public void procesarEstructureB(EstructureB trama, Tranca tranca) {
         Synchronizer sss = trama.getTask();
         if (sss.getTabla().equalsIgnoreCase(firstone.cliente.datos.model.Synchronizer.TABLE_TELEFONO_PROPIETARIO))
         {
@@ -178,11 +182,13 @@ public class SynchronizerNegocio {
             if (sss.getTransaccion().equals("I"))
             {
                 Guardia pro = (Guardia)trama.getObjeto();
-                guardiaDao.insert(pro.getCi(),pro.getNombre(),pro.getApellido(),pro.getPassword());
+                if (guardiaDao.get(pro.getCi()) == null)
+                    guardiaDao.insert(pro.getCi(),pro.getNombre(),pro.getApellido(),pro.getPassword());
             }else if (sss.getTransaccion().equals("M"))
             {
                 Guardia pro = (Guardia)trama.getObjeto();
-                guardiaDao.update(pro.getCi(),pro.getNombre(),pro.getApellido(),pro.getPassword());
+                if (guardiaDao.get(pro.getCi()) != null)
+                    guardiaDao.update(pro.getCi(),pro.getNombre(),pro.getApellido(),pro.getPassword());
             }else //Eliminacion
             {
                 guardiaDao.delete(sss.getRef_id());
@@ -194,8 +200,8 @@ public class SynchronizerNegocio {
                 Visita pro = (Visita)trama.getObjeto();
                 if (visitaDao.get(pro.getCi()) == null)
                     visitaDao.insert(pro.getCi(),pro.getNombres(),pro.getApellidos());
-                else
-                    System.out.println("VISITA EXISTENTE");
+//                else
+//                    System.out.println("VISITA EXISTENTE");
             }
         }  else if (sss.getTabla().equalsIgnoreCase(firstone.cliente.datos.model.Synchronizer.TABLE_VEHICULO_VISITA))
         {
@@ -204,8 +210,8 @@ public class SynchronizerNegocio {
                 VehiculoVisita pro = (VehiculoVisita)trama.getObjeto();
                 if (vehiculoVisitaDao.get(pro.getPlaca()) == null)
                     vehiculoVisitaDao.insert(pro.getPlaca(), pro.getMarca());
-                else
-                    System.out.println("VEHICULO VISITA EXISTENTE");
+//                else
+//                    System.out.println("VEHICULO VISITA EXISTENTE");
             }
         }  else if (sss.getTabla().equalsIgnoreCase(firstone.cliente.datos.model.Synchronizer.TABLE_VISITA_VEHICULO))
         {
@@ -216,8 +222,15 @@ public class SynchronizerNegocio {
                 String ci = cads[1];
                 if (! visitaVehiculoDao.existRelation(ci, placa))
                     visitaVehiculoDao.insertRelation(placa, ci);
-                else
-                    System.out.println("VISITA VEHICULO EXISTENTE");
+//                else
+//                    System.out.println("VISITA VEHICULO EXISTENTE");
+            }
+        } else if(sss.getTabla().equalsIgnoreCase(firstone.cliente.datos.model.Synchronizer.TABLE_TRANCA))
+        {
+            if (sss.getTransaccion().equals("M") && tranca.getId() == Integer.parseInt(sss.getRef_id()))
+            {
+                firstone.serializable.Tranca tran = (firstone.serializable.Tranca)trama.getObjeto();
+                trancaDao.update(tran.getDescripcion(),tran.getTipo(),tran.getId());
             }
         }
     }

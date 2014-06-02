@@ -36,11 +36,15 @@ import firstone.cliente.util.Parametros;
 import firstone.cliente.util.Sincronizacion;
 import firstone.serializable.Contrato;
 import firstone.serializable.EstructureB;
+import firstone.serializable.Notificacion;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -75,7 +79,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
     ProcesoRFID procesoRFID;
 
     Client cliente;
-    
+    boolean respondido;
     /**
      * Creates new form Main
      */
@@ -845,6 +849,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jTabbedPane1.getAccessibleContext().setAccessibleName("Ingreso y Salida de Vehículos");
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -1136,6 +1141,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
         if (vehiculo != null) {
             List<Propietario> propietarios = propietarioNegocio.obtenerPropietarios(vehiculo.getPlaca());
 
+            enviarNotificaciones(propietarios, vehiculo);
+            
             jtext_placa_vehiculo.setText(vehiculo.getPlaca());
             jtext_marca_vehiculo.setText(vehiculo.getMarca());
             jtext_modelo_vehiculo.setText(vehiculo.getModelo());
@@ -1160,6 +1167,45 @@ public class Main extends javax.swing.JFrame implements EventClient {
         } else {
             JOptionPane.showMessageDialog(rootPane, "Se reconocio vehiculo con la Etiqueta de FIRSTONE que no esta registrado en este lugar", "Vehiculo reconocido", JOptionPane.WARNING_MESSAGE);
         }
+    }
+    
+    private void enviarNotificaciones(List<Propietario> propietarios, Vehiculo veh) {
+        respondido = false;
+        
+        Notificacion notifi = new Notificacion();
+        notifi.setMarca(veh.getMarca());
+        notifi.setPlaca(veh.getPlaca());
+        notifi.setAccion(tranca.getTipo());
+        notifi.setCi_guardia(guardia.getCi());
+        for (Propietario p : propietarios)
+        {
+            notifi.setCi(p.getCi());
+            if (! interfazEnvioCliente.lanzarNotificacion(notifi))
+            {
+                log.error("No se pudo enviar la notificacion al propietario CI: " + notifi.getCi() + " del vehiculo PLACA :" + notifi.getPlaca());
+                circuitoNegocio.dejarPasarVehiculo();
+                respondido = true;
+            }
+            else
+                log.info("Se envio la notificacion al propietario CI: " + notifi.getCi() + " del vehiculo PLACA :" + notifi.getPlaca());
+        }
+        
+        Thread t = new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                try{
+                    Thread.sleep(11000);
+                }catch(InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+                
+                if (! respondido)
+                    circuitoNegocio.dejarPasarVehiculo();
+            }
+        });
+        t.start();
     }
 
     private void cargarAdvertencias() {
@@ -1223,7 +1269,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         {
             if (o instanceof EstructureB)
             {
-                synchronizerNegocio.procesarEstructureB((EstructureB)o);
+                synchronizerNegocio.procesarEstructureB((EstructureB)o,tranca);
             }
         }
     }
@@ -1240,6 +1286,31 @@ public class Main extends javax.swing.JFrame implements EventClient {
     private void maximoId(Long last_id) {
         Sincronizacion.prop.setProperty("ULTIMO_ID_SINCRONIZADO", ""+last_id);
         Sincronizacion.save();
+    }
+    
+    private synchronized void denegarIngresoSalida(Contrato contrato)
+    {
+        try {
+            if (! respondido)
+            {
+                String cad = new String(contrato.getContenido(),"UTF-8");
+                Boolean response = new Boolean(cad.split(",")[1]);
+                if (response)
+                {
+                    circuitoNegocio.dejarPasarVehiculo();
+                }else
+                    JOptionPane.showMessageDialog(rootPane, "Vehiculo Bloqueado", "Vehiculo Bloqueado", JOptionPane.WARNING_MESSAGE);
+                
+                respondido = true;
+            }
+        } catch (UnsupportedEncodingException ex) {
+            log.error("Error al deserealizar",ex);
+        }
+    }
+    
+    private void licenciaInactiva()
+    {
+        JOptionPane.showMessageDialog(rootPane, "Licencia Inactiva", "La licencia de acceso a nuestros servidores esta desactivado, por favor cualquier duda comunicarse con Soporte       www.identifour.com", JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
@@ -1262,6 +1333,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
             case Accion.ALARMA : llegoUnaAlarma((firstone.serializable.Alarma)ObjectUtil.createObject(contrato.getContenido())); break;
             case Accion.DOWNLOAD : llegoPaqueteSincronizacion((List<Object>)ObjectUtil.createObject(contrato.getContenido())); break;
             case Accion.MAX_ID : maximoId((Long)ObjectUtil.createObject(contrato.getContenido()));
+            case Accion.DENEGAR_INGRESO_SALIDA : denegarIngresoSalida(contrato);
+            case Accion.LICENCIA_INACTIVA   : licenciaInactiva();
+                
         }
     }
 

@@ -2012,3 +2012,571 @@ org.postgresql.util.PSQLException: ERROR: inserción o actualización en la tabl
 [INFO ,2014-06-01 02:00:26,664 18275,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
 [INFO ,2014-06-01 02:00:26,711 18322,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
 [WARN ,2014-06-01 02:00:49,912 41523,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[ERROR,2014-06-01 12:07:29,562 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:07:30,615 1053,firstone.cliente.ccs.InterfazConfiguracion,AWT-EventQueue-0] No se pudo conectar
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectOpened(Client.java:101)
+	at firstone.cliente.ccs.InterfazConfiguracion.iniciar(InterfazConfiguracion.java:60)
+	at firstone.cliente.presentacion.Configuracion.<init>(Configuracion.java:37)
+	at firstone.cliente.presentacion.LogIn.<init>(LogIn.java:39)
+	at firstone.cliente.presentacion.LogIn$3.run(LogIn.java:220)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:705)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:675)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-01 12:08:00,602 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:08:01,658 1056,firstone.cliente.ccs.InterfazConfiguracion,AWT-EventQueue-0] No se pudo conectar
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectOpened(Client.java:101)
+	at firstone.cliente.ccs.InterfazConfiguracion.iniciar(InterfazConfiguracion.java:60)
+	at firstone.cliente.presentacion.Configuracion.<init>(Configuracion.java:37)
+	at firstone.cliente.presentacion.LogIn.<init>(LogIn.java:39)
+	at firstone.cliente.presentacion.LogIn$3.run(LogIn.java:220)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:705)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:675)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-01 12:08:12,784 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:08:57,742 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:13:16,265 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:14:23,075 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-01 12:16:24,984 1,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[INFO ,2014-06-01 12:16:34,067 9084,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] Guardar TRANCA :: ID :1 :: DESCRIPCION :Tranca Norte :: TIPO:INGRESO
+[INFO ,2014-06-01 12:16:54,804 29821,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 12:16:54,865 29882,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 12:16:54,919 29936,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 12:16:54,987 30004,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 12:16:55,110 30127,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 12:16:55,581 30598,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[ERROR,2014-06-01 12:16:55,608 30625,firstone.cliente.datos.dao.PropietarioDAO,Thread-5] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «estado» viola la restricción not null
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.PropietarioDAO.insert(PropietarioDAO.java:209)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:139)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[INFO ,2014-06-01 12:16:55,609 30626,firstone.cliente.datos.dao.TelefonoDAO,Thread-5] Guardar Telefono :: CI :4920550 :: TELEFONO :77370309
+[ERROR,2014-06-01 12:16:55,648 30665,firstone.cliente.datos.dao.TelefonoDAO,Thread-5] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: inserción o actualización en la tabla «telefono_propietario» viola la llave foránea «fk_telefono_propietario»
+  Detail: La llave (ci)=(4920550) no está presente en la tabla «propietario».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.TelefonoDAO.insert(TelefonoDAO.java:41)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:131)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[ERROR,2014-06-01 12:16:55,669 30686,firstone.cliente.datos.dao.VehiculoDAO,Thread-5] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: el valor null para la columna «estado» viola la restricción not null
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.VehiculoDAO.insert(VehiculoDAO.java:102)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:153)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[ERROR,2014-06-01 12:16:55,715 30732,firstone.cliente.datos.dao.PropietarioVehiculoDAO,Thread-5] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: inserción o actualización en la tabla «propietario_vehiculo» viola la llave foránea «fk_propietario_vehiculo_propietario»
+  Detail: La llave (ci)=(4920550) no está presente en la tabla «propietario».
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.PropietarioVehiculoDAO.insertRelation(PropietarioVehiculoDAO.java:91)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:170)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[ERROR,2014-06-01 12:16:55,761 30778,firstone.cliente.datos.dao.GuardiaDAO,Thread-5] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «pk_guardia»
+  Detail: Ya existe la llave (ci)=(123456).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.GuardiaDAO.insert(GuardiaDAO.java:102)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:181)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[WARN ,2014-06-01 12:19:26,681 181698,firstone.cliente.presentacion.Main,Thread-5] El core se ha desconectado
+[INFO ,2014-06-01 12:20:02,602 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 12:20:02,703 101,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 12:20:02,778 176,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 12:20:02,873 271,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 12:20:03,142 540,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 12:20:03,533 931,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 12:20:03,616 1014,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :4920550 :: TELEFONO :77370309
+[ERROR,2014-06-01 12:20:03,727 1125,firstone.cliente.datos.dao.GuardiaDAO,Thread-4] Error al realizar la insercion en la base de datos
+org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «pk_guardia»
+  Detail: Ya existe la llave (ci)=(123456).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2077)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1810)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:257)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:498)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at firstone.cliente.datos.dao.GuardiaDAO.insert(GuardiaDAO.java:102)
+	at firstone.cliente.negocio.SynchronizerNegocio.procesarEstructureB(SynchronizerNegocio.java:181)
+	at firstone.cliente.presentacion.Main.llegoPaqueteSincronizacion(Main.java:1243)
+	at firstone.cliente.presentacion.Main.onNewPackageComplet(Main.java:1280)
+	at com.firstonesoft.client.Client.onNewPackageComplet(Client.java:208)
+	at com.firstonesoft.client.ListenerData.run(ListenerData.java:48)
+[WARN ,2014-06-01 12:22:23,587 140985,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:13:21,604 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:13:21,708 104,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:13:21,785 181,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:13:21,851 247,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:13:21,996 392,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:13:22,486 882,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:15:24,106 122502,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:20:37,017 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:20:37,110 93,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:20:37,198 181,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:20:37,279 262,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:20:37,422 405,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:20:37,511 494,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:20:51,524 14507,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:21:40,601 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:21:40,700 99,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:21:40,777 176,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:21:40,855 254,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:21:40,995 394,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:21:41,082 481,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:21:55,799 15198,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:22:17,649 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:22:17,738 89,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:22:17,816 167,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:22:17,878 229,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:22:18,006 357,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:22:18,083 434,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:23:02,531 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:23:18,984 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:23:19,083 99,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:23:19,171 187,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:23:19,260 276,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:23:19,512 528,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:23:19,600 616,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:23:22,298 3314,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:24:21,688 1,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:24:21,773 86,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:24:21,840 153,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:24:21,941 254,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:24:22,053 366,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:24:22,103 416,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:24:24,600 2913,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:25:21,038 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:25:21,140 102,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:25:21,216 178,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:25:21,286 248,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:25:21,422 384,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:25:21,463 425,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:25:23,173 2135,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:46:53,853 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:46:53,948 95,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:46:54,013 160,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:46:54,140 287,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:46:54,281 428,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:46:54,430 577,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 13:47:11,643 17790,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[DEBUG,2014-06-01 13:49:40,014 0,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de Visita :: CI 4920549
+[DEBUG,2014-06-01 13:49:40,017 3,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Validando valores de VehiculoVisita :: PLACA 4321AAA
+[INFO ,2014-06-01 13:49:40,046 32,firstone.cliente.datos.dao.VehiculoVisitaDAO,AWT-EventQueue-0] Guardar VehiculoVisita :: PLACA :4321AAA
+[INFO ,2014-06-01 13:49:40,112 98,firstone.cliente.datos.dao.VisitaDAO,AWT-EventQueue-0] Guardar visita :: CI 4920549
+[INFO ,2014-06-01 13:49:40,153 139,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] verificar Relacion :: CI :4920549 :: PLACA :4321AAA
+[INFO ,2014-06-01 13:49:40,172 158,firstone.cliente.datos.dao.VisitaVehiculoDAO,AWT-EventQueue-0] Guardar Relacion Vehiculo - Visita :: CI :4920549 :: PLACA :4321AAA
+[INFO ,2014-06-01 13:49:40,217 203,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Guardar IngresoSalida de Visita :: PLACA :4321AAA :: TIPO :INGRESO :: FECHA_HORA :Sun Jun 01 13:49:40 BOT 2014
+[INFO ,2014-06-01 13:49:40,248 234,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Registro de Visita
+[WARN ,2014-06-01 13:50:31,483 51469,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 13:52:01,908 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:52:02,043 135,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:52:02,126 218,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:52:02,196 288,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:52:03,009 1101,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:52:03,191 1283,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:52:03,270 1362,firstone.cliente.datos.dao.VisitaVehiculoDAO,Thread-4] verificar Relacion :: CI :4920549 :: PLACA :4321AAA
+[WARN ,2014-06-01 13:52:21,787 19879,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 13:52:32,739 30831,firstone.cliente.presentacion.Main,Thread-6] El core se ha desconectado
+[WARN ,2014-06-01 13:53:28,728 86820,firstone.cliente.presentacion.Main,Thread-8] El core se ha desconectado
+[INFO ,2014-06-01 13:56:55,690 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 13:56:55,790 100,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 13:56:55,867 177,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 13:56:55,922 232,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 13:56:56,060 370,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:56:56,267 577,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 13:56:56,376 686,firstone.cliente.datos.dao.VisitaVehiculoDAO,Thread-4] verificar Relacion :: CI :4920549 :: PLACA :4321AAA
+[WARN ,2014-06-01 13:56:58,240 2550,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 13:57:09,768 14078,firstone.cliente.presentacion.Main,Thread-6] El core se ha desconectado
+[INFO ,2014-06-01 14:08:00,924 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 14:12:25,565 264641,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:13:13,882 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 14:13:39,585 25703,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:27:20,474 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 14:27:20,531 57,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:27:20,532 58,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :AL FIN
+[WARN ,2014-06-01 14:29:01,252 100778,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:29:56,551 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 14:30:38,104 41553,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:45:00,038 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:45:00 BOT 2014
+[INFO ,2014-06-01 14:45:00,038 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:45:00,050 12,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:45:00,184 146,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:45:10,676 10638,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:45:10 BOT 2014
+[INFO ,2014-06-01 14:45:10,676 10638,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:45:11,596 11558,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:45:11 BOT 2014
+[INFO ,2014-06-01 14:45:11,596 11558,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:45:11,597 11559,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:45:11,719 11681,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:45:18,908 18870,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:45:18 BOT 2014
+[INFO ,2014-06-01 14:45:18,908 18870,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:45:19,308 19270,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:45:19 BOT 2014
+[INFO ,2014-06-01 14:45:19,309 19271,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:45:19,309 19271,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:45:19,379 19341,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:45:21,932 21894,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:45:21 BOT 2014
+[INFO ,2014-06-01 14:45:21,933 21895,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:46:01,108 61070,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:46:01 BOT 2014
+[INFO ,2014-06-01 14:46:01,108 61070,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:46:01,108 61070,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:46:01,170 61132,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:46:06,324 66286,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:46:06 BOT 2014
+[INFO ,2014-06-01 14:46:06,324 66286,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:46:08,508 68470,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:46:08 BOT 2014
+[INFO ,2014-06-01 14:46:08,508 68470,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:46:08,509 68471,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:46:08,587 68549,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:46:10,924 70886,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:46:10 BOT 2014
+[INFO ,2014-06-01 14:46:10,924 70886,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:46:11,884 71846,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:46:11 BOT 2014
+[INFO ,2014-06-01 14:46:11,884 71846,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:46:11,885 71847,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:46:11,986 71948,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:46:14,356 74318,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:46:14 BOT 2014
+[INFO ,2014-06-01 14:46:14,356 74318,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:46:16,052 76014,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:46:16 BOT 2014
+[INFO ,2014-06-01 14:46:16,052 76014,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:46:16,052 76014,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:46:16,151 76113,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:46:17,515 77477,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:46:17 BOT 2014
+[INFO ,2014-06-01 14:46:17,516 77478,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-01 14:46:32,762 92724,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:51:56,811 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 14:51:56 BOT 2014
+[INFO ,2014-06-01 14:51:56,812 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 14:51:56,824 13,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 14:51:56,929 118,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:51:59,074 2263,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 14:51:59 BOT 2014
+[INFO ,2014-06-01 14:51:59,074 2263,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 14:52:18,266 21455,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-01 14:52:18,306 21495,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :123ABC
+[INFO ,2014-06-01 14:52:18,383 21572,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :123ABC
+[WARN ,2014-06-01 14:56:42,083 285272,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 14:57:12,464 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-01 14:57:12,496 32,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :123ABC
+[INFO ,2014-06-01 14:57:12,542 78,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :123ABC
+[INFO ,2014-06-01 14:57:50,855 38391,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-01 14:57:50,951 38487,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-01 14:57:51,005 38541,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-01 14:57:51,061 38597,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-01 14:57:52,015 39551,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:57:53,678 41214,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 14:57:53,765 41301,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :7800725 :: TELEFONO :78019942
+[INFO ,2014-06-01 14:57:53,823 41359,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :7800726 :: TELEFONO :78019943
+[INFO ,2014-06-01 14:57:53,907 41443,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :7800727 :: TELEFONO :78019944
+[WARN ,2014-06-01 14:58:31,541 79077,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 16:29:44,305 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 16:29:44 BOT 2014
+[INFO ,2014-06-01 16:29:44,306 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 16:29:44,319 14,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 16:29:44,564 259,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 16:29:50,808 6503,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 16:29:50 BOT 2014
+[INFO ,2014-06-01 16:29:50,809 6504,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 16:29:58,411 14106,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 16:30:05,416 21111,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 17:14:58,620 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 17:15:59,397 60777,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 17:16:16,836 78216,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 17:22:36,763 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 17:22:36 BOT 2014
+[INFO ,2014-06-01 17:22:36,764 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 17:22:36,775 12,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 17:22:37,013 250,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:22:41,346 4583,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 17:22:41 BOT 2014
+[INFO ,2014-06-01 17:22:41,346 4583,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-01 17:22:42,493 5730,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 17:26:37,457 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 17:26:37 BOT 2014
+[INFO ,2014-06-01 17:26:37,457 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 17:26:37,469 12,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 17:26:37,793 336,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:28:33,543 116086,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 17:28:33 BOT 2014
+[INFO ,2014-06-01 17:28:33,544 116087,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 17:28:36,623 119166,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 17:28:36 BOT 2014
+[INFO ,2014-06-01 17:28:36,624 119167,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 17:28:36,625 119168,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 17:28:36,891 119434,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:28:55,735 138278,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 17:28:55 BOT 2014
+[INFO ,2014-06-01 17:28:55,735 138278,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 17:28:56,302 138845,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 17:28:56 BOT 2014
+[INFO ,2014-06-01 17:28:56,303 138846,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 17:28:56,303 138846,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 17:28:56,372 138915,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:28:59,455 141998,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 17:28:59 BOT 2014
+[INFO ,2014-06-01 17:28:59,456 141999,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 17:29:00,487 143030,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 17:29:00 BOT 2014
+[INFO ,2014-06-01 17:29:00,487 143030,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 17:29:00,488 143031,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 17:29:00,576 143119,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:29:02,529 145072,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 17:29:02 BOT 2014
+[INFO ,2014-06-01 17:29:02,529 145072,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-01 17:29:11,662 154205,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 17:55:30,966 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 17:57:02,777 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 17:57:03,022 245,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 17:57:03,024 247,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :POR QUE NO FUNCA DESDE ALLA
+[WARN ,2014-06-01 17:57:16,249 13472,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 18:45:08,050 0,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:45:12,119 4069,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 18:45:12 BOT 2014
+[INFO ,2014-06-01 18:45:12,119 4069,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 18:45:13,647 5597,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:45:16,070 8020,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 18:45:16 BOT 2014
+[INFO ,2014-06-01 18:45:16,071 8021,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 18:45:17,412 9362,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:45:31,164 23114,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:45:31,165 23115,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :Hola Mundo
+[INFO ,2014-06-01 18:45:50,183 42133,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:45:50,183 42133,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :wuajajajaja
+[INFO ,2014-06-01 18:50:22,398 314348,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:50:29,010 320960,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:50:32,108 324058,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:50:37,390 329340,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:50:37,391 329341,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :xvjtr
+[INFO ,2014-06-01 18:52:58,369 470319,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:52:58,373 470323,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :fbbd
+[INFO ,2014-06-01 18:53:55,508 527458,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:53:55,509 527459,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :xcby
+[INFO ,2014-06-01 18:55:06,979 598929,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:55:06,980 598930,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :fhb
+[INFO ,2014-06-01 18:56:44,766 696716,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:56:44,767 696717,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :fyjvcd
+[INFO ,2014-06-01 18:56:49,303 701253,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:56:49,304 701254,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :fyjvcd
+[INFO ,2014-06-01 18:56:49,489 701439,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 18:56:49,490 701440,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :fyjvcd
+[INFO ,2014-06-01 18:57:26,322 738272,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-01 18:57:26,365 738315,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :123ABC
+[INFO ,2014-06-01 18:57:26,397 738347,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :123ABC
+[INFO ,2014-06-01 18:59:06,089 838039,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-01 18:59:06,135 838085,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :123ABC
+[INFO ,2014-06-01 18:59:06,165 838115,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :123ABC
+[INFO ,2014-06-01 19:00:04,568 896518,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:00:04,620 896570,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:00:04,685 896635,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 19:07:56,893 1368843,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:07:56,943 1368893,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:07:56,970 1368920,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[WARN ,2014-06-01 19:11:37,749 1589699,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 19:13:22,324 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:13:22,379 55,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:13:22,414 90,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 19:13:42,515 20191,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:13:42,596 20272,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:13:42,626 20302,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[WARN ,2014-06-01 19:15:03,986 101662,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 19:15:43,450 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:15:43,493 43,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:15:43,541 91,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[WARN ,2014-06-01 19:16:00,490 17040,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 19:50:16,331 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:50:16,373 42,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:50:16,420 89,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 19:50:27,435 11104,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 19:50:43,243 26912,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 19:50:43,325 26994,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 19:50:43,357 27026,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 19:50:47,681 31350,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 19:50:47,682 31351,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 19:50:47 BOT 2014
+[WARN ,2014-06-01 19:51:00,016 43685,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 20:01:59,576 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:01:59,626 50,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:01:59,661 85,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:02:02,077 2501,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:02:02,079 2503,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:02:02 BOT 2014
+[INFO ,2014-06-01 20:02:25,226 25650,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:02:25,227 25651,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:02:25 BOT 2014
+[WARN ,2014-06-01 20:03:04,125 64549,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 20:03:15,783 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:03:15,841 58,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:03:15,877 94,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:03:18,296 2513,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:03:18,298 2515,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:03:18 BOT 2014
+[WARN ,2014-06-01 20:03:37,238 21455,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 20:06:41,821 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:06:41,910 89,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:06:41,948 127,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:06:44,437 2616,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:06:44,438 2617,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:06:44 BOT 2014
+[INFO ,2014-06-01 20:06:57,100 15279,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:06:57,137 15316,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:06:57,164 15343,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:07:15,452 33631,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:07:15,508 33687,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:07:15,534 33713,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:07:23,204 41383,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:07:23,204 41383,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:07:23 BOT 2014
+[INFO ,2014-06-01 20:07:44,268 62447,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:07:44,312 62491,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:07:44,343 62522,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:07:51,293 69472,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-01 20:08:33,908 112087,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 20:40:45,300 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:41:10,990 25690,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:42:54,770 129470,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:43:03,894 138594,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:45:19,269 273969,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:46:46,867 361567,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:47:03,692 378392,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:47:21,995 396695,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 20:47:52,099 426799,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:47:52 BOT 2014
+[INFO ,2014-06-01 20:47:52,099 426799,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:47:53,571 428271,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 20:47:53 BOT 2014
+[INFO ,2014-06-01 20:47:53,571 428271,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 20:47:53,572 428272,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 20:47:53,667 428367,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:47:55,898 430598,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:47:55 BOT 2014
+[INFO ,2014-06-01 20:47:55,898 430598,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:47:56,387 431087,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 20:47:56 BOT 2014
+[INFO ,2014-06-01 20:47:56,387 431087,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 20:47:56,389 431089,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 20:47:56,504 431204,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:47:58,162 432862,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:47:58 BOT 2014
+[INFO ,2014-06-01 20:47:58,163 432863,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:48:16,795 451495,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 20:48:16 BOT 2014
+[INFO ,2014-06-01 20:48:16,795 451495,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 20:48:16,795 451495,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 20:48:16,892 451592,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:48:21,291 455991,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:48:21 BOT 2014
+[INFO ,2014-06-01 20:48:21,291 455991,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:48:21,811 456511,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 20:48:21 BOT 2014
+[INFO ,2014-06-01 20:48:21,811 456511,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 20:48:21,812 456512,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 20:48:21,919 456619,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:48:23,210 457910,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:48:23 BOT 2014
+[INFO ,2014-06-01 20:48:23,211 457911,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:48:25,763 460463,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 01 20:48:25 BOT 2014
+[INFO ,2014-06-01 20:48:25,763 460463,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-01 20:48:25,764 460464,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-01 20:48:25,821 460521,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:48:27,314 462014,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Sun Jun 01 20:48:27 BOT 2014
+[INFO ,2014-06-01 20:48:27,315 462015,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-01 20:49:10,371 505071,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:49:10,416 505116,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:49:10,483 505183,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:51:31,354 646054,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:51:31,393 646093,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:51:31,419 646119,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:51:31,772 646472,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:51:31,773 646473,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:51:31 BOT 2014
+[INFO ,2014-06-01 20:51:56,225 670925,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:51:56,277 670977,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:51:56,340 671040,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:52:06,763 681463,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:52:06,765 681465,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:52:06 BOT 2014
+[INFO ,2014-06-01 20:52:15,353 690053,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:52:15,393 690093,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:52:15,419 690119,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:52:25,868 700568,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:52:25,868 700568,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:52:25 BOT 2014
+[INFO ,2014-06-01 20:52:35,192 709892,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-01 20:52:35,245 709945,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-01 20:52:35,278 709978,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 7800727 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-01 20:52:45,814 720514,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-01 20:52:45,815 720515,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 01 20:52:45 BOT 2014
+[WARN ,2014-06-01 20:52:58,659 733359,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 21:52:35,003 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 21:53:22,934 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-01 22:10:37,531 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:11:45,888 68357,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:12:54,751 137220,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:17:37,429 419898,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:18:50,077 492546,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:19:09,132 511601,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:20:13,108 575577,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:22:31,835 714304,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:23:10,267 752736,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:23:26,827 769296,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-01 22:23:36,923 779392,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-01 22:23:38,912 781381,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[WARN ,2014-06-01 23:02:45,334 0,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-02 00:02:41,275 1,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 00:02:41 BOT 2014
+[INFO ,2014-06-02 00:02:41,275 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 00:02:41,286 12,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 00:02:41,362 88,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 00:02:45,226 3952,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 00:02:45 BOT 2014
+[INFO ,2014-06-02 00:02:45,226 3952,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 00:02:45,227 3953,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 00:02:45,290 4016,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 00:02:49,378 8104,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-02 00:02:49,448 8174,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-02 00:02:52,821 11547,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado

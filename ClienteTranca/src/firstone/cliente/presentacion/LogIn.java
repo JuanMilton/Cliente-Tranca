@@ -88,9 +88,9 @@ public class LogIn extends javax.swing.JFrame {
 
         jLabel2.setText("Contraseña");
 
-        jtext_ci.setText("777777");
+        jtext_ci.setText("123456");
 
-        jtext_contrasenia.setText("777777");
+        jtext_contrasenia.setText("123456a");
 
         jButton1.setText("Ingresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -198,7 +198,7 @@ public class LogIn extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
