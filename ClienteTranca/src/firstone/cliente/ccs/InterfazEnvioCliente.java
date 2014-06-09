@@ -83,6 +83,8 @@ public class InterfazEnvioCliente implements EventClient {
     
     public boolean lanzarNotificacion(Notificacion notifi)
     {
+        if (cliente == null || !cliente.isConnected())
+            return false;
         Contrato contrato = new Contrato();
         contrato.setAccion(Accion.NOTIFICACION);
         contrato.setContenido(ObjectUtil.createBytes(notifi));

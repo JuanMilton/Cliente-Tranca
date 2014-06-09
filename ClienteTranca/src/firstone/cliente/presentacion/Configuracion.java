@@ -10,6 +10,7 @@ import firstone.cliente.ccs.InterfazConfiguracion;
 import firstone.cliente.datos.model.Tranca;
 import firstone.cliente.event.EventConfiguracion;
 import firstone.cliente.negocio.TrancaNegocio;
+import firstone.cliente.util.Sincronizacion;
 import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
@@ -158,6 +159,8 @@ public class Configuracion extends javax.swing.JFrame implements EventConfigurac
     private void jboton_trancaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_trancaActionPerformed
         Tranca tranca = (Tranca)jcombo_trancas.getSelectedItem();
         trancaNegocio.guardarTranca(tranca);
+        Sincronizacion.prop.setProperty("ULTIMO_ID_SINCRONIZADO", "0");
+        Sincronizacion.save();
         this.dispose();
     }//GEN-LAST:event_jboton_trancaActionPerformed
 

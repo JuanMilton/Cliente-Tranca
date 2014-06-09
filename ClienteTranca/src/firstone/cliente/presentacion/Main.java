@@ -25,6 +25,7 @@ import firstone.cliente.datos.model.VehiculoVisita;
 import firstone.cliente.datos.model.Visita;
 import firstone.cliente.negocio.AvisoNegocio;
 import firstone.cliente.negocio.BitacoraNegocio;
+import firstone.cliente.negocio.IngresoSalidaNegocio;
 import firstone.cliente.negocio.PropietarioNegocio;
 import firstone.cliente.negocio.SynchronizerNegocio;
 import firstone.cliente.negocio.TrancaNegocio;
@@ -37,6 +38,13 @@ import firstone.cliente.util.Sincronizacion;
 import firstone.serializable.Contrato;
 import firstone.serializable.EstructureB;
 import firstone.serializable.Notificacion;
+import java.awt.FlowLayout;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.RenderingHints;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -46,7 +54,9 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -66,6 +76,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
 
     PropietarioNegocio propietarioNegocio;
     VehiculoNegocio vehiculoNegocio;
+    IngresoSalidaNegocio ingresoSalidaNegocio;
     IngresoSalidaVisitaNegocio ingresoSalidaVisitaNegocio;
     TrancaNegocio trancaNegocio;
     BitacoraNegocio bitacoraNegocio;
@@ -78,6 +89,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
     Guardia guardia;
     ProcesoRFID procesoRFID;
 
+    Vehiculo vehiculo;
+    List<Propietario> propietarios;
     Client cliente;
     boolean respondido;
     /**
@@ -108,6 +121,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         propietarioNegocio = new PropietarioNegocio();
         vehiculoNegocio = new VehiculoNegocio();
         ingresoSalidaVisitaNegocio = new IngresoSalidaVisitaNegocio();
+        ingresoSalidaNegocio = new IngresoSalidaNegocio();
         trancaNegocio = new TrancaNegocio();
         circuitoNegocio = new InteraccionNegocio();
         bitacoraNegocio = new BitacoraNegocio();
@@ -164,6 +178,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jpanel_foto_vehiculo = new javax.swing.JPanel();
         jButton7 = new javax.swing.JButton();
         jTextField7 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jtext_ci_propietario = new javax.swing.JTextField();
@@ -175,7 +190,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jlist_telefonos_propietario = new javax.swing.JList();
         jtext_nombre_propietario = new javax.swing.JTextField();
         jtext_apellido_propietario = new javax.swing.JTextField();
-        jPanel14 = new javax.swing.JPanel();
+        panel_propietarios_fotos = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
         jtext_licencia_propietario = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -188,8 +203,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jLabel13 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         list_telefonos_propietarios = new javax.swing.JList();
-        panel_foto_propietario = new javax.swing.JPanel();
         jLabel28 = new javax.swing.JLabel();
+        label_foto_propietario = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         text_ci_visita = new javax.swing.JTextField();
@@ -264,19 +279,22 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jpanel_foto_vehiculoLayout.setHorizontalGroup(
             jpanel_foto_vehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanel_foto_vehiculoLayout.createSequentialGroup()
-                .addGap(107, 107, 107)
-                .addGroup(jpanel_foto_vehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField7))
+                .addContainerGap()
+                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53)
+                .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jpanel_foto_vehiculoLayout.createSequentialGroup()
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jpanel_foto_vehiculoLayout.setVerticalGroup(
             jpanel_foto_vehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpanel_foto_vehiculoLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton7)
+                .addGroup(jpanel_foto_vehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -286,7 +304,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addGap(0, 172, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -327,7 +345,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("PROPIETARIOS");
+        jLabel2.setText("CONDUCTORES");
 
         jtext_ci_propietario.setEnabled(false);
 
@@ -346,17 +364,17 @@ public class Main extends javax.swing.JFrame implements EventClient {
 
         jtext_apellido_propietario.setEnabled(false);
 
-        jPanel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panel_propietarios_fotos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panel_propietarios_fotosLayout = new javax.swing.GroupLayout(panel_propietarios_fotos);
+        panel_propietarios_fotos.setLayout(panel_propietarios_fotosLayout);
+        panel_propietarios_fotosLayout.setHorizontalGroup(
+            panel_propietarios_fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 139, Short.MAX_VALUE)
+        panel_propietarios_fotosLayout.setVerticalGroup(
+            panel_propietarios_fotosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jLabel14.setText("Número de Licencia");
@@ -373,7 +391,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel_propietarios_fotos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -396,7 +414,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_propietarios_fotos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtext_ci_propietario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -413,16 +431,14 @@ public class Main extends javax.swing.JFrame implements EventClient {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
                     .addComponent(jtext_licencia_propietario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel10)
-                        .addGap(31, 31, 31))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel10)))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -446,7 +462,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
         jPanel15.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel25.setText("PROPIETARIO A VISITAR");
+        jLabel25.setText("CONDUCTORES");
 
         jLabel26.setText("Nombre o Apellido");
 
@@ -462,19 +478,6 @@ public class Main extends javax.swing.JFrame implements EventClient {
 
         list_telefonos_propietarios.setValueIsAdjusting(true);
         jScrollPane4.setViewportView(list_telefonos_propietarios);
-
-        panel_foto_propietario.setBackground(new java.awt.Color(51, 204, 255));
-
-        javax.swing.GroupLayout panel_foto_propietarioLayout = new javax.swing.GroupLayout(panel_foto_propietario);
-        panel_foto_propietario.setLayout(panel_foto_propietarioLayout);
-        panel_foto_propietarioLayout.setHorizontalGroup(
-            panel_foto_propietarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        panel_foto_propietarioLayout.setVerticalGroup(
-            panel_foto_propietarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
 
         jLabel28.setText("Foto");
 
@@ -502,8 +505,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
                             .addComponent(jLabel28))
                         .addGap(73, 73, 73)
                         .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(panel_foto_propietario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jScrollPane4)))))
+                            .addComponent(jScrollPane4)
+                            .addComponent(label_foto_propietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -526,13 +529,13 @@ public class Main extends javax.swing.JFrame implements EventClient {
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel15Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(panel_foto_propietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel28)
-                        .addGap(94, 94, 94))))
+                        .addGap(94, 94, 94))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(label_foto_propietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
         jPanel17.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -603,7 +606,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
                             .addComponent(text_placa_visita)
                             .addComponent(text_marca_visita)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton6)))
                 .addContainerGap())
         );
@@ -635,7 +638,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
                     .addComponent(text_marca_visita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -723,7 +726,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton9)
                     .addComponent(jButton8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(jboton_alarma_roja)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jboton_apagar_alarma)
@@ -933,6 +936,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
                 text_nombre_apellido_propietario.setSelectionStart(index);
                 text_nombre_apellido_propietario.setSelectionEnd(text_nombre_apellido_propietario.getText().length());
                 //////// FALTA MOSTRAR LA FOTO DEL PROPIETARIO
+                ImageIcon ii = new ImageIcon(propietario.getFoto());
+                ii = new ImageIcon(ii.getImage().getScaledInstance(label_foto_propietario.getWidth(), label_foto_propietario.getHeight(), Image.SCALE_SMOOTH));
+                label_foto_propietario.setIcon(ii);
 
             }
         }
@@ -943,13 +949,16 @@ public class Main extends javax.swing.JFrame implements EventClient {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        
-        JFrame.setDefaultLookAndFeelDecorated(true);
-        LanzarAviso frame = new LanzarAviso(tranca,guardia,cliente);
-        frame.setTitle("Avisar");
-        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
+        if (cliente != null && cliente.isConnected())
+        {
+            JFrame.setDefaultLookAndFeelDecorated(true);
+            LanzarAviso frame = new LanzarAviso(tranca,guardia,cliente);
+            frame.setTitle("Avisar");
+            frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+            frame.pack();
+            frame.setVisible(true);
+        }else
+            JOptionPane.showMessageDialog(rootPane, "No se encuentra conectado al servidor", "Enviar Aviso", JOptionPane.WARNING_MESSAGE);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -959,7 +968,8 @@ public class Main extends javax.swing.JFrame implements EventClient {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         circuitoNegocio.dejarPasarVehiculo();
-        
+        if (vehiculo != null)
+            ingresoSalidaNegocio.registrarIngresoSalida(tranca.getTipo(), new Date(), tranca.getId(), vehiculo.getPlaca());
         registrarBitacoraGuardia(Bitacora.ACCION_DEJAR_PASAR_VEHICULO, "Se dejo pasar un vehiculo de manera directa sin registro, fecha y hora :"+(new Date()) );
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -970,10 +980,14 @@ public class Main extends javax.swing.JFrame implements EventClient {
         alarma.setEmisor(tranca.getDescripcion());
         alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.ROJO);
 
-        if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
-            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma ROJA a fecha y hora :"+(new Date()) );
+        if (cliente.isConnected())
+        {
+            if (! interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
+                JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        }
         else
-            JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "No se encuentra conectado al servidor", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma ROJA a fecha y hora :"+(new Date()) );
     }//GEN-LAST:event_jboton_alarma_rojaActionPerformed
 
     private void jboton_apagar_alarmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jboton_apagar_alarmaActionPerformed
@@ -985,10 +999,13 @@ public class Main extends javax.swing.JFrame implements EventClient {
             alarma.setEmisor(tranca.getDescripcion());
             alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.AMARILLO);
 
-            if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
-                registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma AMARILLA a fecha y hora :"+(new Date()) );
-            else
-                JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+            if (cliente.isConnected())
+            {
+                if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
+                    JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+            }else
+                JOptionPane.showMessageDialog(rootPane, "No se encuentra conectado al servidor", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma AMARILLA a fecha y hora :"+(new Date()) );
         } else {
             circuitoNegocio.apagarAlarma();
             jboton_alarma_roja.setVisible(true);
@@ -1005,10 +1022,13 @@ public class Main extends javax.swing.JFrame implements EventClient {
         alarma.setEmisor(tranca.getDescripcion());
         alarma.setPrioridad(firstone.cliente.circuito.model.Alarma.VERDE);
 
-        if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
-            registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma VERDE a fecha y hora :"+(new Date()) );
-        else
-            JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        if (cliente.isConnected())
+        {
+            if (interfazEnvioCliente.lanzarAlarma(alarma,tranca.getId_entorno()))
+                JOptionPane.showMessageDialog(rootPane, "Problemas al lanzar la alarma, no se pudo alertar", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE);
+        }else
+           JOptionPane.showMessageDialog(rootPane, "No se encuentra conectado al servidor", "Lanzar Alarma", JOptionPane.WARNING_MESSAGE); 
+        registrarBitacoraGuardia(Bitacora.ACCION_LANZAR_ALARMA, "Activar una alarma VERDE a fecha y hora :"+(new Date()) );
     }//GEN-LAST:event_jboton_alarma_verdeActionPerformed
 
     private void onWindowsClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onWindowsClosing
@@ -1075,6 +1095,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -1098,7 +1119,6 @@ public class Main extends javax.swing.JFrame implements EventClient {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
@@ -1125,8 +1145,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
     private javax.swing.JTextField jtext_modelo_vehiculo;
     private javax.swing.JTextField jtext_nombre_propietario;
     private javax.swing.JTextField jtext_placa_vehiculo;
+    private javax.swing.JLabel label_foto_propietario;
     private javax.swing.JList list_telefonos_propietarios;
-    private javax.swing.JPanel panel_foto_propietario;
+    private javax.swing.JPanel panel_propietarios_fotos;
     private javax.swing.JTextField text_apellidos_visita;
     private javax.swing.JTextField text_ci_propietario;
     private javax.swing.JTextField text_ci_visita;
@@ -1137,37 +1158,68 @@ public class Main extends javax.swing.JFrame implements EventClient {
     // End of variables declaration//GEN-END:variables
 
     private void registrarIngresoSalidaVehiculo(int rfid) {
-        Vehiculo vehiculo = vehiculoNegocio.obtenerVehiculoRFID(rfid);
+        vehiculo = vehiculoNegocio.obtenerVehiculoRFID(rfid);
         if (vehiculo != null) {
-            List<Propietario> propietarios = propietarioNegocio.obtenerPropietarios(vehiculo.getPlaca());
+            propietarios = propietarioNegocio.obtenerPropietarios(vehiculo.getPlaca());
 
             enviarNotificaciones(propietarios, vehiculo);
             
             jtext_placa_vehiculo.setText(vehiculo.getPlaca());
             jtext_marca_vehiculo.setText(vehiculo.getMarca());
             jtext_modelo_vehiculo.setText(vehiculo.getModelo());
-            //FALTA FOTO DEL VEHICULO
+            
+            
+            ImageIcon ii = new ImageIcon(vehiculo.getFoto());
+            ii = new ImageIcon(ii.getImage().getScaledInstance(jLabel15.getWidth(),jLabel15.getHeight(),  Image.SCALE_SMOOTH));
+            jLabel15.setIcon(ii);
 
+            panel_propietarios_fotos.setLayout(new FlowLayout());
+            panel_propietarios_fotos.removeAll();
+            int index = 0;
             for (Propietario propietario : propietarios) {
-                jtext_ci_propietario.setText(propietario.getCi());
-                jtext_nombre_propietario.setText(propietario.getNombres());
-                jtext_apellido_propietario.setText(propietario.getApellidos());
-                jtext_licencia_propietario.setText(propietario.getNro_licencia());
-
-                DefaultListModel<Integer> telefonos = new DefaultListModel<>();
-                for (Integer telf : propietario.getTelefonos()) {
-                    telefonos.addElement(telf);
-                }
-                jlist_telefonos_propietario.setModel(telefonos);
+                mostrarInfoPropietario(propietario);
                 
+                ImageIcon ii2 = new ImageIcon(propietario.getFoto());
+                ii2 = new ImageIcon(ii2.getImage().getScaledInstance(panel_propietarios_fotos.getHeight()-12, panel_propietarios_fotos.getHeight()-12, Image.SCALE_SMOOTH));
+                JLabel l = new JLabel(ii2, JLabel.LEFT);
+                l.setName(""+index);
+                l.addMouseListener(new MouseAdapter() {
+                    
+                    @Override
+                    public void mouseClicked(MouseEvent e)
+                    {
+                        mostrarInfoPropietario(propietarios.get(Integer.parseInt(((JLabel)e.getComponent()).getName())));
+                    }
+                    
+                });
+                
+                panel_propietarios_fotos.add(l);
+                index++;
                 ///FALTA LA FOTO DE LOS PROPIETARIOS
-
             }
+            this.validate();
+            panel_propietarios_fotos.validate();
 
         } else {
             JOptionPane.showMessageDialog(rootPane, "Se reconocio vehiculo con la Etiqueta de FIRSTONE que no esta registrado en este lugar", "Vehiculo reconocido", JOptionPane.WARNING_MESSAGE);
         }
     }
+    
+    private void mostrarInfoPropietario(Propietario propietario)
+    {
+        jtext_ci_propietario.setText(propietario.getCi());
+        jtext_nombre_propietario.setText(propietario.getNombres());
+        jtext_apellido_propietario.setText(propietario.getApellidos());
+        jtext_licencia_propietario.setText(propietario.getNro_licencia());
+
+        DefaultListModel<Integer> telefonos = new DefaultListModel<>();
+        for (Integer telf : propietario.getTelefonos()) {
+            telefonos.addElement(telf);
+        }
+        jlist_telefonos_propietario.setModel(telefonos);
+    }
+    
+    
     
     private void enviarNotificaciones(List<Propietario> propietarios, Vehiculo veh) {
         respondido = false;
@@ -1182,9 +1234,10 @@ public class Main extends javax.swing.JFrame implements EventClient {
             notifi.setCi(p.getCi());
             if (! interfazEnvioCliente.lanzarNotificacion(notifi))
             {
+                respondido = true;
                 log.error("No se pudo enviar la notificacion al propietario CI: " + notifi.getCi() + " del vehiculo PLACA :" + notifi.getPlaca());
                 circuitoNegocio.dejarPasarVehiculo();
-                respondido = true;
+                ingresoSalidaNegocio.registrarIngresoSalida(tranca.getTipo(), new Date(), tranca.getId(), vehiculo.getPlaca());
             }
             else
                 log.info("Se envio la notificacion al propietario CI: " + notifi.getCi() + " del vehiculo PLACA :" + notifi.getPlaca());
@@ -1202,7 +1255,10 @@ public class Main extends javax.swing.JFrame implements EventClient {
                 }
                 
                 if (! respondido)
+                {
                     circuitoNegocio.dejarPasarVehiculo();
+                    ingresoSalidaNegocio.registrarIngresoSalida(tranca.getTipo(), new Date(), tranca.getId(), vehiculo.getPlaca());
+                }
             }
         });
         t.start();
@@ -1255,9 +1311,15 @@ public class Main extends javax.swing.JFrame implements EventClient {
         cargarAlarmas();
         
         if (alarma.getPrioridad().equalsIgnoreCase(firstone.cliente.circuito.model.Alarma.ROJO))
+        {
+            circuitoNegocio.activarAlarma();
             JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.ERROR_MESSAGE);
+        }
         else if (alarma.getPrioridad().equalsIgnoreCase(firstone.cliente.circuito.model.Alarma.AMARILLO))
+        {
+            circuitoNegocio.activarAlarma();
             JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.WARNING_MESSAGE);
+        }
         else
             JOptionPane.showMessageDialog(rootPane, "ALARMA", "ALARMA", JOptionPane.INFORMATION_MESSAGE);
     }
@@ -1293,15 +1355,16 @@ public class Main extends javax.swing.JFrame implements EventClient {
         try {
             if (! respondido)
             {
+                respondido = true;
+                
                 String cad = new String(contrato.getContenido(),"UTF-8");
                 Boolean response = new Boolean(cad.split(",")[1]);
                 if (response)
                 {
                     circuitoNegocio.dejarPasarVehiculo();
+                    ingresoSalidaNegocio.registrarIngresoSalida(tranca.getTipo(), new Date(), tranca.getId(), vehiculo.getPlaca());
                 }else
-                    JOptionPane.showMessageDialog(rootPane, "Vehiculo Bloqueado", "Vehiculo Bloqueado", JOptionPane.WARNING_MESSAGE);
-                
-                respondido = true;
+                    JOptionPane.showMessageDialog(rootPane, "Vehiculo Bloqueado", "Vehiculo Bloqueado", JOptionPane.ERROR_MESSAGE);
             }
         } catch (UnsupportedEncodingException ex) {
             log.error("Error al deserealizar",ex);
@@ -1310,7 +1373,7 @@ public class Main extends javax.swing.JFrame implements EventClient {
     
     private void licenciaInactiva()
     {
-        JOptionPane.showMessageDialog(rootPane, "Licencia Inactiva", "La licencia de acceso a nuestros servidores esta desactivado, por favor cualquier duda comunicarse con Soporte       www.identifour.com", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane,"La licencia de acceso a nuestros servidores esta desactivado, por favor cualquier duda comunicarse con Soporte       www.identifour.com" ,"Licencia Inactiva" , JOptionPane.ERROR_MESSAGE);
     }
 
     @Override
@@ -1332,9 +1395,9 @@ public class Main extends javax.swing.JFrame implements EventClient {
             case Accion.AVISO : llegoUnAviso((firstone.serializable.Aviso)ObjectUtil.createObject(contrato.getContenido())); break;
             case Accion.ALARMA : llegoUnaAlarma((firstone.serializable.Alarma)ObjectUtil.createObject(contrato.getContenido())); break;
             case Accion.DOWNLOAD : llegoPaqueteSincronizacion((List<Object>)ObjectUtil.createObject(contrato.getContenido())); break;
-            case Accion.MAX_ID : maximoId((Long)ObjectUtil.createObject(contrato.getContenido()));
-            case Accion.DENEGAR_INGRESO_SALIDA : denegarIngresoSalida(contrato);
-            case Accion.LICENCIA_INACTIVA   : licenciaInactiva();
+            case Accion.MAX_ID : maximoId((Long)ObjectUtil.createObject(contrato.getContenido())); break;
+            case Accion.DENEGAR_INGRESO_SALIDA : denegarIngresoSalida(contrato); break;
+            case Accion.LICENCIA_INACTIVA   : licenciaInactiva(); break;
                 
         }
     }

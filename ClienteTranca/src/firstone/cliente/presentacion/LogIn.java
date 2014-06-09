@@ -90,7 +90,7 @@ public class LogIn extends javax.swing.JFrame {
 
         jtext_ci.setText("123456");
 
-        jtext_contrasenia.setText("123456a");
+        jtext_contrasenia.setText("123456");
 
         jButton1.setText("Ingresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

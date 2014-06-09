@@ -6,7 +6,9 @@
 
 package firstone.cliente.circuito;
 
-import firstone.cliente.datos.dao.AvisoDAO;
+import firstone.cliente.util.Parametros;
+import java.util.Random;
+
 
 /**
  *
@@ -15,6 +17,13 @@ import firstone.cliente.datos.dao.AvisoDAO;
 public class InterfazCircuito {
     
     private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(InterfazCircuito.class);
+    
+    private boolean debug_sensor;
+    
+    public InterfazCircuito()
+    {
+        debug_sensor = true;
+    }
     
     public void levantarTranca()
     {
@@ -38,12 +47,16 @@ public class InterfazCircuito {
     
     public int leerRFID()
     {
-        
         return 0;
     }
     
     public boolean leerSensor()
     {
+        if (Parametros.DEBUG_CIRCUITO)
+        {
+            debug_sensor = !debug_sensor;
+            return debug_sensor;
+        }
         return false;
     }
     

@@ -2580,3 +2580,1331 @@ org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de 
 [INFO ,2014-06-02 00:02:49,378 8104,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
 [INFO ,2014-06-02 00:02:49,448 8174,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
 [WARN ,2014-06-02 00:02:52,821 11547,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-02 00:49:59,372 0,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-02 00:50:25,989 26617,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[WARN ,2014-06-02 01:00:30,759 631387,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-02 07:30:24,189 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:30:24,454 265,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[ERROR,2014-06-02 07:31:51,757 9,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.net.SocketInputStream.read(SocketInputStream.java:203)
+	at java.io.DataInputStream.readBoolean(DataInputStream.java:242)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:76)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[INFO ,2014-06-02 07:34:14,492 1,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:34:14,543 52,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:34:14,575 84,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:34:25,624 11133,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:34:25 BOT 2014
+[INFO ,2014-06-02 07:34:45,906 31415,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:34:45,953 31462,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:34:46,012 31521,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:34:57,015 42524,firstone.cliente.datos.dao.AvisoDAO,Thread-6] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:34:57 BOT 2014
+[INFO ,2014-06-02 07:36:50,011 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:36:50,065 54,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:36:50,096 85,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:37:01,100 11089,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:37:01 BOT 2014
+[WARN ,2014-06-02 07:37:07,636 17625,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-02 07:37:54,362 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:37:54,413 51,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:37:54,451 89,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:38:04,800 10438,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:38:04,802 10440,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:38:04 BOT 2014
+[INFO ,2014-06-02 07:38:16,697 22335,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:38:16,780 22418,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:38:16,806 22444,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:38:27,446 33084,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:38:27,448 33086,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:38:27 BOT 2014
+[WARN ,2014-06-02 07:40:06,039 131677,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-02 07:41:13,960 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:41:14,007 47,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:41:14,040 80,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:41:24,447 10487,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:41:24,449 10489,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:41:24 BOT 2014
+[INFO ,2014-06-02 07:43:27,582 133622,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:43:27,624 133664,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:43:27,687 133727,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:43:37,935 143975,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:43:37,936 143976,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:43:37 BOT 2014
+[INFO ,2014-06-02 07:53:59,074 765114,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:53:59,121 765161,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:53:59,150 765190,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:54:09,495 775535,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:54:09,497 775537,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:54:09 BOT 2014
+[INFO ,2014-06-02 07:54:21,930 787970,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:54:21,975 788015,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:54:22,027 788067,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:54:32,535 798575,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:54:32,536 798576,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:54:32 BOT 2014
+[INFO ,2014-06-02 07:55:23,626 849666,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 07:55:23,671 849711,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 07:55:23,700 849740,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 07:55:33,994 860034,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 07:55:33,996 860036,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 07:55:33 BOT 2014
+[INFO ,2014-06-02 08:08:46,356 1652396,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:08:46,399 1652439,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:08:46,430 1652470,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:08:56,802 1662842,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:08:56,803 1662843,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:08:56 BOT 2014
+[INFO ,2014-06-02 08:09:27,252 1693292,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:09:27,299 1693339,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:09:27,352 1693392,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:09:37,760 1703800,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:09:37,762 1703802,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:09:37 BOT 2014
+[INFO ,2014-06-02 08:09:58,132 1724172,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:09:58,165 1724205,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:09:58,190 1724230,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:10:08,583 1734623,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:10:08,585 1734625,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:10:08 BOT 2014
+[INFO ,2014-06-02 08:13:40,426 1946466,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:13:40,484 1946524,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:13:40,509 1946549,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:13:51,218 1957258,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:13:51,219 1957259,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:13:51 BOT 2014
+[INFO ,2014-06-02 08:18:08,936 2214976,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:18:08,983 2215023,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:18:09,010 2215050,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:18:19,391 2225431,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:18:19,393 2225433,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:18:19 BOT 2014
+[INFO ,2014-06-02 08:20:33,871 2359911,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :3
+[INFO ,2014-06-02 08:20:33,953 2359993,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321DSA
+[INFO ,2014-06-02 08:20:33,985 2360025,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321DSA
+[INFO ,2014-06-02 08:20:44,542 2370582,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:20:44,544 2370584,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 02 08:20:44 BOT 2014
+[INFO ,2014-06-02 08:23:00,817 2506857,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-02 08:24:16,334 2582374,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-02 08:24:38,631 2604671,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Aviso
+[INFO ,2014-06-02 08:40:40,471 3566511,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 08:40:40 BOT 2014
+[INFO ,2014-06-02 08:40:40,471 3566511,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 08:40:40,472 3566512,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 08:40:40,554 3566594,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:41:55,685 3641725,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 02 08:41:55 BOT 2014
+[INFO ,2014-06-02 08:41:55,686 3641726,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-02 08:41:57,638 3643678,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 08:41:57 BOT 2014
+[INFO ,2014-06-02 08:41:57,638 3643678,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 08:41:57,639 3643679,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 08:41:57,691 3643731,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:42:14,494 3660534,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 02 08:42:14 BOT 2014
+[INFO ,2014-06-02 08:42:14,494 3660534,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-02 08:42:15,022 3661062,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 08:42:15 BOT 2014
+[INFO ,2014-06-02 08:42:15,022 3661062,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 08:42:15,023 3661063,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 08:42:15,076 3661116,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:43:27,021 3733061,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 02 08:43:27 BOT 2014
+[INFO ,2014-06-02 08:43:27,022 3733062,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-02 08:43:32,541 3738581,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 08:43:32 BOT 2014
+[INFO ,2014-06-02 08:43:32,541 3738581,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 08:43:32,541 3738581,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 08:43:32,591 3738631,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:44:07,053 3773093,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 02 08:44:07 BOT 2014
+[INFO ,2014-06-02 08:44:07,053 3773093,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-02 08:45:02,644 3828684,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 02 08:45:02 BOT 2014
+[INFO ,2014-06-02 08:45:02,644 3828684,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-02 08:45:02,645 3828685,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-02 08:45:02,705 3828745,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-02 08:45:04,436 3830476,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 02 08:45:04 BOT 2014
+[INFO ,2014-06-02 08:45:04,436 3830476,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-02 09:34:35,171 6801211,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[ERROR,2014-06-06 20:40:55,940 2,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:68)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-06 21:56:19,914 2,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:68)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[INFO ,2014-06-06 21:56:38,025 18113,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Fri Jun 06 21:56:38 BOT 2014
+[INFO ,2014-06-06 21:56:38,026 18114,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[ERROR,2014-06-07 02:33:35,560 2,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:68)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-08 18:52:41,081 1,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:68)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-08 18:52:57,865 1,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Error, no se pudo conectar con el servidor
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:69)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at java.net.Socket.<init>(Socket.java:425)
+	at java.net.Socket.<init>(Socket.java:208)
+	at com.firstonesoft.client.Client.connectClosed(Client.java:68)
+	at firstone.cliente.presentacion.Main.<init>(Main.java:119)
+	at firstone.cliente.presentacion.LogIn.jButton1ActionPerformed(LogIn.java:176)
+	at firstone.cliente.presentacion.LogIn.access$100(LogIn.java:21)
+	at firstone.cliente.presentacion.LogIn$2.actionPerformed(LogIn.java:98)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6505)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3321)
+	at java.awt.Component.processEvent(Component.java:6270)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4861)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.awt.Component.dispatchEvent(Component.java:4687)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:707)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:680)
+	at java.awt.EventQueue$4.run(EventQueue.java:678)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:677)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-08 18:55:45,466 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-08 18:56:02,870 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[INFO ,2014-06-08 19:08:59,103 776233,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] Guardar TRANCA :: ID :1 :: DESCRIPCION :Tranca Norte :: TIPO:INGRESO
+[INFO ,2014-06-08 19:09:11,903 789033,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:09:12,041 789171,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:09:12,109 789239,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:09:12,175 789305,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[WARN ,2014-06-08 19:10:27,802 0,firstone.cliente.presentacion.Main,Thread-5] El core se ha desconectado
+[INFO ,2014-06-08 19:10:55,063 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:10:55,149 86,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:10:55,295 232,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:10:55,414 351,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 19:10:55,588 525,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:10:59,149 4086,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:11:00,081 5018,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:11:00,122 5059,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-08 19:12:03,431 68368,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 19:51:01,189 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:51:01,262 73,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:51:01,335 146,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:51:01,417 228,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 19:51:01,735 546,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:51:04,070 2881,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:51:04,608 3419,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:51:04,612 3423,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-08 19:51:15,731 14542,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 19:53:45,885 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:53:45,977 92,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:53:46,045 160,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:53:46,112 227,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 19:54:28,069 42184,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-08 19:54:41,003 55118,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 19:55:11,012 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:55:11,092 80,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:55:11,226 214,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:55:11,314 302,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 19:55:11,545 533,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:55:11,596 584,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-08 19:55:40,183 29171,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 19:56:53,219 1,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 19:56:53,270 52,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 19:56:53,337 119,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 19:56:53,415 197,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 19:56:53,771 553,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:56:54,962 1744,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 19:56:55,088 1870,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :4920550 :: TELEFONO :77370309
+[INFO ,2014-06-08 19:56:55,140 1922,firstone.cliente.datos.dao.TelefonoDAO,Thread-4] Guardar Telefono :: CI :4920549 :: TELEFONO :78460454
+[WARN ,2014-06-08 19:58:12,864 79646,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 22:11:04,314 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 22:11:04,397 83,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 22:11:04,509 195,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 22:11:04,614 300,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 22:11:04,998 684,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 22:11:05,685 1371,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-08 22:12:08,874 64560,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:12:08,898 64584,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:12:08,948 64634,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:12:11,306 66992,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:12:11,328 67014,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-08 22:12:11,352 67038,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[WARN ,2014-06-08 22:12:15,530 71216,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 22:15:47,696 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:15:47,728 32,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:15:47,771 75,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[WARN ,2014-06-08 22:15:58,381 10685,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 22:15:58,774 11078,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:15:58 BOT 2014
+[INFO ,2014-06-08 22:16:20,608 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:16:20,638 30,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:16:20,671 63,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[WARN ,2014-06-08 22:16:24,491 3883,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 22:26:20,683 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:26:20,714 31,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:26:20,767 84,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:26:26,836 6153,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 22:26:26,908 6225,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 22:26:26,976 6293,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 22:26:27,020 6337,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[WARN ,2014-06-08 22:26:29,705 9022,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-08 22:27:04,251 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:27:04,277 26,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:29:26,770 142519,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:29:26,789 142538,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-08 22:30:50,338 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:30:50,361 23,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 22:30:50,391 53,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:30:50,395 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:30:50 BOT 2014
+[INFO ,2014-06-08 22:34:59,440 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:34:59,476 36,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 22:34:59,506 66,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:34:59,507 67,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:34:59 BOT 2014
+[INFO ,2014-06-08 22:38:52,150 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:38:52,178 28,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 22:38:52,205 55,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:38:52,207 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:38:52 BOT 2014
+[INFO ,2014-06-08 22:39:58,502 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 22:39:58,537 35,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 22:39:58,569 67,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 22:39:58,571 69,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:39:58 BOT 2014
+[INFO ,2014-06-08 22:40:02,181 3679,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:40:02,204 3702,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:40:02,236 3734,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:40:02,236 3734,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:40:02 BOT 2014
+[INFO ,2014-06-08 22:40:34,270 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:40:34,295 25,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:40:34,340 70,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:40:34,342 72,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:40:34 BOT 2014
+[INFO ,2014-06-08 22:41:42,437 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:41:42,464 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:41:42,491 54,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:41:42,493 56,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:41:42 BOT 2014
+[INFO ,2014-06-08 22:44:34,676 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:44:34,708 32,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:44:34,741 65,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:44:34,742 66,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:44:34 BOT 2014
+[INFO ,2014-06-08 22:44:46,252 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:44:46,278 26,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:44:46,305 53,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:44:46,307 55,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:44:46 BOT 2014
+[INFO ,2014-06-08 22:45:15,635 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:45:15,665 30,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:45:15,689 54,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:45:15,690 55,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:45:15 BOT 2014
+[INFO ,2014-06-08 22:47:30,859 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:47:30,889 30,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:47:30,913 54,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:47:30,915 56,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:47:30 BOT 2014
+[INFO ,2014-06-08 22:48:41,221 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:41,248 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:41,282 61,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:41,284 63,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:41 BOT 2014
+[ERROR,2014-06-08 22:48:41,284 63,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:41,284 63,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:41 BOT 2014
+[INFO ,2014-06-08 22:48:50,258 9037,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:50,312 9091,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:50,340 9119,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:50,342 9121,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:50 BOT 2014
+[ERROR,2014-06-08 22:48:50,342 9121,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:50,342 9121,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:50 BOT 2014
+[INFO ,2014-06-08 22:48:51,610 10389,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:51,639 10418,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:51,663 10442,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:51,663 10442,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:51 BOT 2014
+[ERROR,2014-06-08 22:48:51,663 10442,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:51,663 10442,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:51 BOT 2014
+[INFO ,2014-06-08 22:48:52,698 11477,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:52,720 11499,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:52,744 11523,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:52,745 11524,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:52 BOT 2014
+[ERROR,2014-06-08 22:48:52,745 11524,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:52,745 11524,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:52 BOT 2014
+[INFO ,2014-06-08 22:48:57,954 16733,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:57,974 16753,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:58,003 16782,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:58,003 16782,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:58 BOT 2014
+[ERROR,2014-06-08 22:48:58,003 16782,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:58,004 16783,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:58 BOT 2014
+[INFO ,2014-06-08 22:48:58,738 17517,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:48:58,760 17539,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:48:58,795 17574,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:58,796 17575,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:58 BOT 2014
+[ERROR,2014-06-08 22:48:58,796 17575,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:48:58,796 17575,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:48:58 BOT 2014
+[INFO ,2014-06-08 22:49:27,690 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:27,723 33,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:27,752 62,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:27,754 64,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:27 BOT 2014
+[ERROR,2014-06-08 22:49:27,754 64,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:27,754 64,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:27 BOT 2014
+[INFO ,2014-06-08 22:49:28,626 936,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:28,646 956,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:28,673 983,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:28,673 983,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:28 BOT 2014
+[ERROR,2014-06-08 22:49:28,674 984,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:28,674 984,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:28 BOT 2014
+[INFO ,2014-06-08 22:49:29,074 1384,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:29,099 1409,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:29,129 1439,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:29,129 1439,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:29 BOT 2014
+[ERROR,2014-06-08 22:49:29,129 1439,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:29,129 1439,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:29 BOT 2014
+[INFO ,2014-06-08 22:49:29,786 2096,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:29,816 2126,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:29,862 2172,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:29,862 2172,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:29 BOT 2014
+[ERROR,2014-06-08 22:49:29,862 2172,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:29,862 2172,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:29 BOT 2014
+[INFO ,2014-06-08 22:49:30,290 2600,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:30,317 2627,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:30,355 2665,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:30,355 2665,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:30 BOT 2014
+[ERROR,2014-06-08 22:49:30,355 2665,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:30,355 2665,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:30 BOT 2014
+[INFO ,2014-06-08 22:49:30,882 3192,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:30,907 3217,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:30,935 3245,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:30,936 3246,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:30 BOT 2014
+[ERROR,2014-06-08 22:49:30,936 3246,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:30,936 3246,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:30 BOT 2014
+[INFO ,2014-06-08 22:49:31,314 3624,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:31,340 3650,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:31,374 3684,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:31,374 3684,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:31 BOT 2014
+[ERROR,2014-06-08 22:49:31,374 3684,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:31,374 3684,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:31 BOT 2014
+[INFO ,2014-06-08 22:49:31,938 4248,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:31,958 4268,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:31,983 4293,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:31,983 4293,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:31 BOT 2014
+[ERROR,2014-06-08 22:49:31,983 4293,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:32,021 4331,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:32 BOT 2014
+[INFO ,2014-06-08 22:49:32,313 4623,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:32,366 4676,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:32,390 4700,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:32,391 4701,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:32 BOT 2014
+[ERROR,2014-06-08 22:49:32,391 4701,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:32,391 4701,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:32 BOT 2014
+[INFO ,2014-06-08 22:49:32,953 5263,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:32,975 5285,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:33,007 5317,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,008 5318,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[ERROR,2014-06-08 22:49:33,008 5318,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,008 5318,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[INFO ,2014-06-08 22:49:33,514 5824,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:33,537 5847,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:33,562 5872,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,562 5872,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[ERROR,2014-06-08 22:49:33,563 5873,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,563 5873,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[INFO ,2014-06-08 22:49:33,769 6079,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:33,792 6102,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:33,818 6128,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,818 6128,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[ERROR,2014-06-08 22:49:33,819 6129,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:33,819 6129,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:33 BOT 2014
+[INFO ,2014-06-08 22:49:34,097 6407,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:34,120 6430,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:34,148 6458,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:34,148 6458,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:34 BOT 2014
+[ERROR,2014-06-08 22:49:34,148 6458,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:34,148 6458,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:34 BOT 2014
+[INFO ,2014-06-08 22:49:34,465 6775,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:34,485 6795,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:34,510 6820,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:34,510 6820,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:34 BOT 2014
+[ERROR,2014-06-08 22:49:34,510 6820,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:34,510 6820,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:34 BOT 2014
+[INFO ,2014-06-08 22:49:40,513 12823,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:40,555 12865,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:40,585 12895,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:40,586 12896,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:40 BOT 2014
+[ERROR,2014-06-08 22:49:40,586 12896,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:40,586 12896,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:40 BOT 2014
+[INFO ,2014-06-08 22:49:41,049 13359,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:41,079 13389,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:41,115 13425,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,115 13425,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[ERROR,2014-06-08 22:49:41,115 13425,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,116 13426,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[INFO ,2014-06-08 22:49:41,417 13727,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:41,443 13753,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:41,469 13779,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,469 13779,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[ERROR,2014-06-08 22:49:41,469 13779,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,469 13779,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[INFO ,2014-06-08 22:49:41,659 13969,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:41,685 13995,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:41,710 14020,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,710 14020,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[ERROR,2014-06-08 22:49:41,710 14020,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,710 14020,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[INFO ,2014-06-08 22:49:41,912 14222,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:41,948 14258,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:41,978 14288,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,978 14288,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[ERROR,2014-06-08 22:49:41,978 14288,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:41,978 14288,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:41 BOT 2014
+[INFO ,2014-06-08 22:49:42,196 14506,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:49:42,224 14534,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:49:42,255 14565,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:42,255 14565,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:42 BOT 2014
+[ERROR,2014-06-08 22:49:42,255 14565,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:49:42,255 14565,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:49:42 BOT 2014
+[INFO ,2014-06-08 22:50:17,786 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:50:17,810 24,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:50:17,840 54,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:17,841 55,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:17 BOT 2014
+[ERROR,2014-06-08 22:50:17,842 56,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:17,842 56,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:17 BOT 2014
+[INFO ,2014-06-08 22:50:34,610 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:50:34,634 24,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:50:34,668 58,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:34,669 59,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:34 BOT 2014
+[ERROR,2014-06-08 22:50:34,669 59,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:34,670 60,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:34 BOT 2014
+[INFO ,2014-06-08 22:50:59,889 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:50:59,915 26,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:50:59,949 60,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:59,951 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:59 BOT 2014
+[ERROR,2014-06-08 22:50:59,951 62,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:50:59,951 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:50:59 BOT 2014
+[INFO ,2014-06-08 22:51:27,058 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:27,086 28,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:27,118 60,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:27,120 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:27 BOT 2014
+[ERROR,2014-06-08 22:51:27,120 62,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:27,120 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:27 BOT 2014
+[INFO ,2014-06-08 22:51:27,897 839,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:27,941 883,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:27,975 917,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:27,975 917,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:27 BOT 2014
+[ERROR,2014-06-08 22:51:27,975 917,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:27,975 917,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:27 BOT 2014
+[INFO ,2014-06-08 22:51:28,271 1213,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:28,295 1237,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:28,329 1271,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,330 1272,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[ERROR,2014-06-08 22:51:28,330 1272,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,330 1272,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[INFO ,2014-06-08 22:51:28,549 1491,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:28,578 1520,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:28,611 1553,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,611 1553,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[ERROR,2014-06-08 22:51:28,611 1553,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,611 1553,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[INFO ,2014-06-08 22:51:28,823 1765,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:28,851 1793,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:28,882 1824,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,882 1824,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[ERROR,2014-06-08 22:51:28,882 1824,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:28,882 1824,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:28 BOT 2014
+[INFO ,2014-06-08 22:51:29,143 2085,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:29,177 2119,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:29,215 2157,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:29,215 2157,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:29 BOT 2014
+[ERROR,2014-06-08 22:51:29,215 2157,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:29,215 2157,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:29 BOT 2014
+[INFO ,2014-06-08 22:51:29,410 2352,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:51:29,437 2379,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:51:29,464 2406,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:29,464 2406,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:29 BOT 2014
+[ERROR,2014-06-08 22:51:29,465 2407,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:51:29,465 2407,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:51:29 BOT 2014
+[INFO ,2014-06-08 22:59:36,526 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 22:59:36,585 59,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 22:59:36,613 87,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:59:36,615 89,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:59:36 BOT 2014
+[ERROR,2014-06-08 22:59:36,615 89,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 22:59:36,615 89,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 22:59:36 BOT 2014
+[INFO ,2014-06-08 23:00:28,277 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:00:28,305 28,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:00:28,337 60,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:28,339 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:28 BOT 2014
+[ERROR,2014-06-08 23:00:28,339 62,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:28,339 62,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:28 BOT 2014
+[INFO ,2014-06-08 23:00:32,861 4584,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:00:32,883 4606,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:00:32,937 4660,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:32,937 4660,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:32 BOT 2014
+[ERROR,2014-06-08 23:00:32,937 4660,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:32,937 4660,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:32 BOT 2014
+[INFO ,2014-06-08 23:00:33,349 5072,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:00:33,379 5102,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:00:33,410 5133,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:33,410 5133,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:33 BOT 2014
+[ERROR,2014-06-08 23:00:33,410 5133,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:33,410 5133,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:33 BOT 2014
+[INFO ,2014-06-08 23:00:33,628 5351,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:00:33,650 5373,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:00:33,679 5402,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:33,679 5402,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:33 BOT 2014
+[ERROR,2014-06-08 23:00:33,679 5402,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:33,679 5402,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:33 BOT 2014
+[INFO ,2014-06-08 23:00:34,021 5744,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:00:34,044 5767,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:00:34,069 5792,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:34,069 5792,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:34 BOT 2014
+[ERROR,2014-06-08 23:00:34,069 5792,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:00:34,069 5792,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:00:34 BOT 2014
+[INFO ,2014-06-08 23:01:50,029 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:01:50,056 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:01:50,084 55,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:50,086 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:50 BOT 2014
+[ERROR,2014-06-08 23:01:50,086 57,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:50,086 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:50 BOT 2014
+[INFO ,2014-06-08 23:01:51,228 1199,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:01:51,248 1219,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:01:51,271 1242,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:51,272 1243,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:51 BOT 2014
+[ERROR,2014-06-08 23:01:51,272 1243,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:51,272 1243,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:51 BOT 2014
+[INFO ,2014-06-08 23:01:51,812 1783,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:01:51,837 1808,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:01:51,861 1832,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:51,861 1832,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:51 BOT 2014
+[ERROR,2014-06-08 23:01:51,861 1832,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:51,861 1832,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:51 BOT 2014
+[INFO ,2014-06-08 23:01:52,092 2063,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:01:52,117 2088,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:01:52,140 2111,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:52,140 2111,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:52 BOT 2014
+[ERROR,2014-06-08 23:01:52,140 2111,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:52,140 2111,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:52 BOT 2014
+[INFO ,2014-06-08 23:01:52,299 2270,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:01:52,330 2301,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:01:52,374 2345,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:52,374 2345,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:52 BOT 2014
+[ERROR,2014-06-08 23:01:52,375 2346,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:01:52,375 2346,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:01:52 BOT 2014
+[INFO ,2014-06-08 23:02:05,053 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:05,080 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:05,109 56,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:05,111 58,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:05 BOT 2014
+[ERROR,2014-06-08 23:02:05,111 58,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:05,111 58,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:05 BOT 2014
+[INFO ,2014-06-08 23:02:05,660 607,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:05,685 632,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:05,711 658,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:05,711 658,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:05 BOT 2014
+[ERROR,2014-06-08 23:02:05,711 658,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:05,711 658,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:05 BOT 2014
+[INFO ,2014-06-08 23:02:06,308 1255,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:06,336 1283,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:06,365 1312,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,365 1312,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[ERROR,2014-06-08 23:02:06,365 1312,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,365 1312,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[INFO ,2014-06-08 23:02:06,572 1519,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:06,597 1544,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:06,622 1569,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,622 1569,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[ERROR,2014-06-08 23:02:06,622 1569,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,622 1569,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[INFO ,2014-06-08 23:02:06,828 1775,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:06,856 1803,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:06,881 1828,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,881 1828,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[ERROR,2014-06-08 23:02:06,881 1828,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:06,881 1828,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:06 BOT 2014
+[INFO ,2014-06-08 23:02:07,492 2439,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:07,521 2468,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:07,561 2508,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:07,562 2509,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:07 BOT 2014
+[ERROR,2014-06-08 23:02:07,562 2509,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:07,562 2509,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:07 BOT 2014
+[INFO ,2014-06-08 23:02:08,220 3167,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:08,243 3190,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:08,273 3220,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:08,274 3221,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:08 BOT 2014
+[ERROR,2014-06-08 23:02:08,274 3221,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:08,274 3221,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:08 BOT 2014
+[INFO ,2014-06-08 23:02:12,012 6959,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:12,087 7034,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:12,114 7061,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,114 7061,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[ERROR,2014-06-08 23:02:12,114 7061,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,114 7061,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[INFO ,2014-06-08 23:02:12,540 7487,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:12,561 7508,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:12,588 7535,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,588 7535,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[ERROR,2014-06-08 23:02:12,588 7535,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,588 7535,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[INFO ,2014-06-08 23:02:12,778 7725,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:12,803 7750,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:12,831 7778,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,831 7778,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[ERROR,2014-06-08 23:02:12,831 7778,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:12,831 7778,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:12 BOT 2014
+[INFO ,2014-06-08 23:02:13,132 8079,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:13,154 8101,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:13,191 8138,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:13,191 8138,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:13 BOT 2014
+[ERROR,2014-06-08 23:02:13,191 8138,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:13,191 8138,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:13 BOT 2014
+[INFO ,2014-06-08 23:02:14,125 9072,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:14,146 9093,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:14,174 9121,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:14,174 9121,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:14 BOT 2014
+[ERROR,2014-06-08 23:02:14,174 9121,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:14,174 9121,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:14 BOT 2014
+[INFO ,2014-06-08 23:02:14,804 9751,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:14,830 9777,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:14,858 9805,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:14,858 9805,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:14 BOT 2014
+[ERROR,2014-06-08 23:02:14,858 9805,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:14,859 9806,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:14 BOT 2014
+[INFO ,2014-06-08 23:02:36,189 1,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:36,215 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:36,253 65,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:36,254 66,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:36 BOT 2014
+[ERROR,2014-06-08 23:02:36,254 66,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:36,255 67,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:36 BOT 2014
+[INFO ,2014-06-08 23:02:36,972 784,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:36,992 804,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:37,015 827,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,015 827,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[ERROR,2014-06-08 23:02:37,015 827,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,016 828,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[INFO ,2014-06-08 23:02:37,446 1258,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:37,487 1299,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:37,515 1327,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,515 1327,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[ERROR,2014-06-08 23:02:37,516 1328,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,516 1328,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[INFO ,2014-06-08 23:02:37,716 1528,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:37,744 1556,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:37,770 1582,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,770 1582,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[ERROR,2014-06-08 23:02:37,770 1582,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:37,771 1583,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:37 BOT 2014
+[INFO ,2014-06-08 23:02:37,949 1761,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:37,976 1788,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:38,003 1815,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,004 1816,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[ERROR,2014-06-08 23:02:38,004 1816,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,004 1816,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[INFO ,2014-06-08 23:02:38,169 1981,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:38,200 2012,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:38,231 2043,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,231 2043,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[ERROR,2014-06-08 23:02:38,231 2043,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,231 2043,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[INFO ,2014-06-08 23:02:38,384 2196,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:38,454 2266,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:38,481 2293,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,481 2293,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[ERROR,2014-06-08 23:02:38,481 2293,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,481 2293,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[INFO ,2014-06-08 23:02:38,637 2449,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:38,668 2480,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:38,698 2510,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,698 2510,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[ERROR,2014-06-08 23:02:38,698 2510,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,698 2510,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[INFO ,2014-06-08 23:02:38,884 2696,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:38,909 2721,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:38,941 2753,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,941 2753,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[ERROR,2014-06-08 23:02:38,941 2753,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:38,941 2753,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:38 BOT 2014
+[INFO ,2014-06-08 23:02:55,060 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:55,085 25,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:55,116 56,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:55,117 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:55 BOT 2014
+[ERROR,2014-06-08 23:02:55,117 57,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:55,117 57,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:55 BOT 2014
+[INFO ,2014-06-08 23:02:55,812 752,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:55,838 778,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:55,861 801,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:55,861 801,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:55 BOT 2014
+[ERROR,2014-06-08 23:02:55,861 801,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:55,861 801,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:55 BOT 2014
+[INFO ,2014-06-08 23:02:56,364 1304,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:56,384 1324,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:56,409 1349,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:56,409 1349,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:56 BOT 2014
+[ERROR,2014-06-08 23:02:56,409 1349,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:56,409 1349,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:56 BOT 2014
+[INFO ,2014-06-08 23:02:56,932 1872,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:02:56,954 1894,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:02:56,981 1921,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:56,981 1921,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:56 BOT 2014
+[ERROR,2014-06-08 23:02:56,982 1922,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:02:56,982 1922,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:02:56 BOT 2014
+[INFO ,2014-06-08 23:03:03,883 8823,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 23:03:03,903 8843,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 23:03:03,930 8870,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:03,930 8870,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:03 BOT 2014
+[ERROR,2014-06-08 23:03:03,930 8870,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:03,930 8870,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:03 BOT 2014
+[INFO ,2014-06-08 23:03:05,195 10135,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 23:03:05,215 10155,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 23:03:05,244 10184,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:05,244 10184,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:05 BOT 2014
+[ERROR,2014-06-08 23:03:05,244 10184,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:05,244 10184,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:05 BOT 2014
+[INFO ,2014-06-08 23:03:07,668 12608,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 23:03:07,690 12630,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 23:03:07,720 12660,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:07,720 12660,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:07 BOT 2014
+[ERROR,2014-06-08 23:03:07,720 12660,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:07,720 12660,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:07 BOT 2014
+[INFO ,2014-06-08 23:03:08,348 13288,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 23:03:08,368 13308,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 23:03:08,394 13334,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:08,394 13334,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:08 BOT 2014
+[ERROR,2014-06-08 23:03:08,394 13334,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:03:08,394 13334,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:03:08 BOT 2014
+[INFO ,2014-06-08 23:09:19,282 0,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-08 23:09:19,382 100,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-08 23:09:19,460 178,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-08 23:09:19,517 235,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-08 23:10:23,313 64031,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:10:23,350 64068,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:10:23,382 64100,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:10:23,384 64102,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:10:23 BOT 2014
+[ERROR,2014-06-08 23:10:23,384 64102,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:10:23,384 64102,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:10:23 BOT 2014
+[INFO ,2014-06-08 23:10:39,168 79886,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:10:39 BOT 2014
+[INFO ,2014-06-08 23:10:39,169 79887,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[WARN ,2014-06-08 23:10:51,926 92644,firstone.cliente.ccs.InterfazEnvioCliente,AWT-EventQueue-0] No se ha podido conectar para enviar la advertencia
+[INFO ,2014-06-08 23:11:01,593 102311,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 08 23:11:01 BOT 2014
+[INFO ,2014-06-08 23:11:01,593 102311,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-08 23:15:00,632 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 08 23:15:00 BOT 2014
+[INFO ,2014-06-08 23:15:00,632 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-08 23:15:01,883 1251,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-08 23:15:02,687 2055,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 08 23:15:02 BOT 2014
+[INFO ,2014-06-08 23:15:02,687 2055,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-08 23:15:03,436 2804,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-08 23:15:04,511 3879,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Sun Jun 08 23:15:04 BOT 2014
+[INFO ,2014-06-08 23:15:04,511 3879,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-08 23:15:05,795 5163,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-08 23:15:09,615 8983,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:15:09,644 9012,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:15:09,673 9041,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:15:09,673 9041,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:15:09 BOT 2014
+[ERROR,2014-06-08 23:15:09,673 9041,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:15:09,673 9041,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:15:09 BOT 2014
+[INFO ,2014-06-08 23:15:21,055 20423,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-08 23:15:21,245 20613,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[ERROR,2014-06-08 23:15:21,326 20694,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:15:21,326 20694,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:15:21 BOT 2014
+[ERROR,2014-06-08 23:15:21,326 20694,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-08 23:15:21,326 20694,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:15:21 BOT 2014
+[INFO ,2014-06-08 23:15:23,871 23239,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :23
+[INFO ,2014-06-08 23:19:14,862 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:19:14,890 28,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:19:14,921 59,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:14,922 60,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:14 BOT 2014
+[ERROR,2014-06-08 23:19:14,922 60,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:14,923 61,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:14 BOT 2014
+[INFO ,2014-06-08 23:19:16,205 1343,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:19:16,232 1370,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:19:16,261 1399,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:16,261 1399,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:16 BOT 2014
+[ERROR,2014-06-08 23:19:16,261 1399,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:16,261 1399,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:16 BOT 2014
+[INFO ,2014-06-08 23:19:17,005 2143,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:19:17,028 2166,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:19:17,063 2201,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:17,063 2201,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:17 BOT 2014
+[ERROR,2014-06-08 23:19:17,063 2201,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:17,064 2202,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:17 BOT 2014
+[INFO ,2014-06-08 23:19:18,157 3295,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-08 23:19:18,181 3319,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[ERROR,2014-06-08 23:19:18,212 3350,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:18,212 3350,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:18 BOT 2014
+[ERROR,2014-06-08 23:19:18,212 3350,firstone.cliente.presentacion.Main,AWT-EventQueue-0] No se pudo enviar la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-08 23:19:18,213 3351,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Sun Jun 08 23:19:18 BOT 2014
+[ERROR,2014-06-09 05:41:54,116 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[INFO ,2014-06-09 05:42:14,891 20775,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] Guardar TRANCA :: ID :2 :: DESCRIPCION :Tranca Sur :: TIPO:SALIDA
+[INFO ,2014-06-09 05:42:21,707 27591,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 05:42:21,763 27647,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 05:42:21,830 27714,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 05:42:21,887 27771,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 05:42:27,707 33591,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[ERROR,2014-06-09 05:47:37,163 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-09 05:47:53,675 0,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[ERROR,2014-06-09 05:48:11,342 17667,firstone.cliente.ccs.InterfazConfiguracion,AWT-EventQueue-0] No se pudo conectar
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.net.SocketInputStream.read(SocketInputStream.java:203)
+	at java.io.DataInputStream.readBoolean(DataInputStream.java:242)
+	at com.firstonesoft.client.Client.connectOpened(Client.java:113)
+	at firstone.cliente.ccs.InterfazConfiguracion.iniciar(InterfazConfiguracion.java:60)
+	at firstone.cliente.presentacion.Configuracion.<init>(Configuracion.java:38)
+	at firstone.cliente.presentacion.LogIn.<init>(LogIn.java:39)
+	at firstone.cliente.presentacion.LogIn$3.run(LogIn.java:220)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:251)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:705)
+	at java.awt.EventQueue.access$000(EventQueue.java:101)
+	at java.awt.EventQueue$3.run(EventQueue.java:666)
+	at java.awt.EventQueue$3.run(EventQueue.java:664)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:675)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:211)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+[ERROR,2014-06-09 05:48:20,465 1,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] No se pudo obtener la informacion de la tranca
+[INFO ,2014-06-09 05:48:30,408 9944,firstone.cliente.datos.dao.TrancaDAO,AWT-EventQueue-0] Guardar TRANCA :: ID :1 :: DESCRIPCION :Tranca Norte :: TIPO:INGRESO
+[INFO ,2014-06-09 05:48:35,096 14632,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 05:48:35,238 14774,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 05:48:35,332 14868,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 05:48:35,445 14981,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 05:48:35,579 15115,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:48:35,823 15359,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:48:35,929 15465,firstone.cliente.datos.dao.TelefonoDAO,Thread-5] Guardar Telefono :: CI :4920550 :: TELEFONO :77370309
+[INFO ,2014-06-09 05:48:35,982 15518,firstone.cliente.datos.dao.TelefonoDAO,Thread-5] Guardar Telefono :: CI :4920549 :: TELEFONO :78460454
+[INFO ,2014-06-09 05:48:44,504 24040,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 05:48:44,532 24068,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 05:48:44,572 24108,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 05:48:44,573 24109,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 05:48:55,593 35129,firstone.cliente.datos.dao.AvisoDAO,Thread-6] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 05:48:55 BOT 2014
+[INFO ,2014-06-09 05:51:46,287 205823,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 05:51:46,352 205888,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 05:51:46,396 205932,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 05:51:46,459 205995,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 05:51:46,586 206122,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:51:46,609 206145,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:52:02,959 222495,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-09 05:52:02,995 222531,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-09 05:52:03,028 222564,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 05:52:03,028 222564,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 05:52:11,897 231433,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:52:11,900 231436,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 05:52:11 BOT 2014
+[INFO ,2014-06-09 05:52:50,447 269983,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 05:52:50,540 270076,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 05:52:50,643 270179,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 05:52:50,708 270244,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 05:52:50,836 270372,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:52:50,857 270393,firstone.cliente.presentacion.Main,Thread-5] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 05:53:08,398 287934,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-09 05:53:08,426 287962,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-09 05:53:08,460 287996,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 05:53:08,460 287996,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 05:53:19,462 298998,firstone.cliente.datos.dao.AvisoDAO,Thread-8] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 05:53:19 BOT 2014
+[WARN ,2014-06-09 05:53:43,834 323370,firstone.cliente.presentacion.Main,Thread-5] El core se ha desconectado
+[INFO ,2014-06-09 06:13:05,446 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 06:13:05,471 25,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 06:13:05,513 67,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:13:05,514 68,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:13:16,517 11071,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:13:16 BOT 2014
+[INFO ,2014-06-09 06:13:16,517 11071,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-5] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:13:16 BOT 2014
+[INFO ,2014-06-09 06:13:30,958 25512,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 06:13:31,044 25598,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 06:13:31,104 25658,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 06:13:31,214 25768,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 06:13:31,371 25925,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:13:31,392 25946,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:13:40,695 35249,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:13:40,696 35250,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:13:40 BOT 2014
+[INFO ,2014-06-09 06:13:40,696 35250,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:13:40 BOT 2014
+[INFO ,2014-06-09 06:15:51,629 166183,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-09 06:15:51,655 166209,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-09 06:15:51,705 166259,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 06:15:51,705 166259,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 06:16:01,661 176215,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:01,663 176217,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:16:01 BOT 2014
+[INFO ,2014-06-09 06:16:01,663 176217,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:16:01 BOT 2014
+[INFO ,2014-06-09 06:16:04,932 179486,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :10
+[INFO ,2014-06-09 06:16:04,954 179508,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :1234ABC
+[INFO ,2014-06-09 06:16:04,990 179544,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 06:16:04,990 179544,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :1234ABC
+[INFO ,2014-06-09 06:16:08,379 182933,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:08,382 182936,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:16:08 BOT 2014
+[INFO ,2014-06-09 06:16:08,382 182936,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :1234ABC :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:16:08 BOT 2014
+[INFO ,2014-06-09 06:16:19,060 193614,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 06:16:19,139 193693,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 06:16:19,277 193831,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 06:16:19,348 193902,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 06:16:19,555 194109,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:19,576 194130,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:30,812 205366,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 06:16:30,865 205419,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 06:16:30,902 205456,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:16:30,902 205456,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:16:34,461 209015,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:34,462 209016,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:16:34 BOT 2014
+[INFO ,2014-06-09 06:16:34,462 209016,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:16:34 BOT 2014
+[INFO ,2014-06-09 06:16:40,628 215182,firstone.cliente.datos.dao.SynchronizerDAO,AWT-EventQueue-0] Obteniendo todas las ultimas transacciones realizadas
+[INFO ,2014-06-09 06:16:40,705 215259,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Obteniendo todas las tareas realizadas por los guardias
+[INFO ,2014-06-09 06:16:40,784 215338,firstone.cliente.datos.dao.IngresoSalidaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas realizados
+[INFO ,2014-06-09 06:16:40,851 215405,firstone.cliente.datos.dao.IngresoSalidaVisitaDAO,AWT-EventQueue-0] Obteniendo todas los ingresos y salidas de las visitas realizados
+[INFO ,2014-06-09 06:16:41,020 215574,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:16:41,042 215596,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[WARN ,2014-06-09 06:17:21,389 255943,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:19:35,036 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:19:35 BOT 2014
+[INFO ,2014-06-09 06:19:35,037 1,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[INFO ,2014-06-09 06:19:37,787 2751,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 06:19:37,814 2778,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 06:19:37,857 2821,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:19:37,857 2821,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:19:48,860 13824,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:19:48 BOT 2014
+[INFO ,2014-06-09 06:19:48,860 13824,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-5] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:19:48 BOT 2014
+[WARN ,2014-06-09 06:19:54,156 19120,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:25:55,128 1,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:25:55,136 9,firstone.cliente.datos.dao.AvisoDAO,Thread-4] Guardar Aviso :: DESCRIPCION :ayuda
+[INFO ,2014-06-09 06:26:31,421 36294,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:26:46,808 51681,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:26:47,858 52731,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:26:54,616 59489,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 09 06:26:54 BOT 2014
+[INFO ,2014-06-09 06:26:54,616 59489,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-09 06:30:20,102 264975,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Activar Alarma Mon Jun 09 06:30:20 BOT 2014
+[INFO ,2014-06-09 06:30:20,102 264975,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:30:20,105 264978,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-09 06:30:20,178 265051,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:33:35,045 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:33:35,052 7,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-09 06:33:35,143 98,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:33:46,901 11856,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Apagar Alarma Mon Jun 09 06:33:46 BOT 2014
+[INFO ,2014-06-09 06:33:46,901 11856,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-09 06:34:21,477 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:34:21 BOT 2014
+[INFO ,2014-06-09 06:34:21,479 2,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[INFO ,2014-06-09 06:35:30,810 69333,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:35:48,047 86570,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:36:01,605 100128,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-09 06:37:45,204 203727,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:37:56,419 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:37:56,426 7,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-09 06:37:56,500 81,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:38:00,780 4361,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-09 06:38:03,209 6790,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:38:46,555 0,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:38:46,562 7,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-09 06:38:46,632 77,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:39:41,069 54514,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:39:49,211 62656,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-09 06:39:52,105 65550,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:42:11,478 0,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:42:16,561 5083,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-09 06:47:15,030 0,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:47:15,037 7,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:47:24,069 9039,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:47:32,853 17823,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:47:40,151 25121,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-09 06:47:52,162 37132,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:47:52,163 37133,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:48:14,791 59761,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[WARN ,2014-06-09 06:48:21,748 66718,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 06:55:02,372 0,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:55:02 BOT 2014
+[INFO ,2014-06-09 06:55:02,373 1,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 06:55:03,373 1001,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 06:55:03,373 1001,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[INFO ,2014-06-09 06:55:20,180 17808,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:55:20 BOT 2014
+[INFO ,2014-06-09 06:55:20,180 17808,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 06:55:20,880 18508,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 06:55:20,880 18508,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[INFO ,2014-06-09 06:55:32,004 29632,firstone.cliente.datos.dao.AvisoDAO,AWT-EventQueue-0] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:55:32 BOT 2014
+[INFO ,2014-06-09 06:55:32,004 29632,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 06:55:32,704 30332,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 06:55:32,704 30332,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Dejar pasar Vehiculo
+[INFO ,2014-06-09 06:55:36,733 34361,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 06:55:36,759 34387,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 06:55:36,803 34431,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:55:36,803 34431,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 06:55:47,807 45435,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:55:47 BOT 2014
+[INFO ,2014-06-09 06:55:47,807 45435,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 06:55:48,507 46135,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 06:55:48,507 46135,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-5] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:55:48 BOT 2014
+[INFO ,2014-06-09 06:55:52,586 50214,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:55:52,587 50215,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 06:55:52 BOT 2014
+[INFO ,2014-06-09 06:55:52,587 50215,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 06:55:53,287 50915,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 06:55:53,287 50915,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 06:55:53 BOT 2014
+[INFO ,2014-06-09 06:57:02,563 120191,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Activar Alarma
+[INFO ,2014-06-09 06:57:02,567 120195,firstone.cliente.datos.dao.BitacoraDAO,AWT-EventQueue-0] Guardar Bitacora :: GUARDIA :123456 :: ACCION :Lanzar Alarma
+[INFO ,2014-06-09 06:57:02,664 120292,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 06:57:05,923 123551,firstone.cliente.circuito.InterfazCircuito,AWT-EventQueue-0] [CIRCUITO] : Apagar Alarma
+[INFO ,2014-06-09 07:01:02,074 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 07:01:02,109 35,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 07:01:02,148 74,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:01:02,148 74,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:01:13,150 11076,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 07:01:13 BOT 2014
+[INFO ,2014-06-09 07:01:13,150 11076,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 07:01:14,152 12078,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 07:01:14,152 12078,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-5] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 07:01:14 BOT 2014
+[WARN ,2014-06-09 07:01:20,611 18537,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 07:04:24,824 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 07:04:24,851 27,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 07:04:24,893 69,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:04:24,894 70,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:04:28,177 3353,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 07:04:28,178 3354,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 07:04:28 BOT 2014
+[INFO ,2014-06-09 07:04:28,178 3354,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 07:04:29,179 4355,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 07:04:29,179 4355,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 07:04:29 BOT 2014
+[WARN ,2014-06-09 07:04:59,343 34519,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 07:05:38,295 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 07:05:38,327 32,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 07:05:38,377 82,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:05:38,377 82,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:05:49,382 11087,firstone.cliente.datos.dao.AvisoDAO,Thread-5] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 07:05:49 BOT 2014
+[INFO ,2014-06-09 07:05:49,382 11087,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Levantar Tranca
+[WARN ,2014-06-09 07:05:49,855 11560,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado
+[INFO ,2014-06-09 07:05:50,382 12087,firstone.cliente.circuito.InterfazCircuito,Thread-5] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 07:05:50,382 12087,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-5] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 07:05:50 BOT 2014
+[INFO ,2014-06-09 07:07:21,591 0,firstone.cliente.datos.dao.VehiculoDAO,AWT-EventQueue-0] obtener Vehiculo :: RFID :11
+[INFO ,2014-06-09 07:07:21,619 28,firstone.cliente.datos.dao.PropietarioDAO,AWT-EventQueue-0] obtener Propietarios :: PLACA :4321ZBA
+[INFO ,2014-06-09 07:07:21,668 77,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920550 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:07:21,668 77,firstone.cliente.presentacion.Main,AWT-EventQueue-0] Se envio la notificacion al propietario CI: 4920549 del vehiculo PLACA :4321ZBA
+[INFO ,2014-06-09 07:07:31,874 10283,firstone.cliente.presentacion.Main,Thread-4] Un nuevo paquete se ha recibido del servidor
+[INFO ,2014-06-09 07:07:31,875 10284,firstone.cliente.datos.dao.AvisoDAO,Thread-4] [CIRCUITO] Dejar Pasar Vehiculo Mon Jun 09 07:07:31 BOT 2014
+[INFO ,2014-06-09 07:07:31,876 10285,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Levantar Tranca
+[INFO ,2014-06-09 07:07:32,876 11285,firstone.cliente.circuito.InterfazCircuito,Thread-4] [CIRCUITO] : Bajar Tranca
+[INFO ,2014-06-09 07:07:32,876 11285,firstone.cliente.datos.dao.IngresoSalidaDAO,Thread-4] Guardar IngresoSalida de Vehiculo :: PLACA :4321ZBA :: TIPO :INGRESO :: FECHA_HORA :Mon Jun 09 07:07:32 BOT 2014
+[WARN ,2014-06-09 07:07:44,743 23152,firstone.cliente.presentacion.Main,Thread-4] El core se ha desconectado

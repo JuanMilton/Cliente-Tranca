@@ -32,16 +32,15 @@ public class ProcesoRFID extends Thread {
         this.interfazCircuito = new InterfazCircuito();
         
         run = true;
-        lastReaded = 0;
     }
     
     @Override
     public void run()
     {
+        lastReaded = 0;
         while (run)
         {
-            
-            int rfid = this.interfazCircuito.leerRFID();
+            int rfid = this.interfazCircuito.leerRFID(); /////////////////////////////////////// LEER RFID
             if (rfid != lastReaded)
             {
                 eventListener.llegoVehiculo(rfid);
