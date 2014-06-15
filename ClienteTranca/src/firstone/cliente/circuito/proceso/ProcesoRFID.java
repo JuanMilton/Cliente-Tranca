@@ -8,9 +8,7 @@ package firstone.cliente.circuito.proceso;
 
 import firstone.cliente.circuito.EventListener;
 import firstone.cliente.circuito.InterfazCircuito;
-import firstone.cliente.datos.dao.GuardiaDAO;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import firstone.cliente.util.Parametros;
 
 /**
  *
@@ -24,7 +22,7 @@ public class ProcesoRFID extends Thread {
     private InterfazCircuito interfazCircuito;
     private boolean run;
     private int lastReaded;
-    
+    public static boolean reconocido;
     
     public ProcesoRFID(EventListener eventListener)
     {
@@ -32,27 +30,43 @@ public class ProcesoRFID extends Thread {
         this.interfazCircuito = new InterfazCircuito();
         
         run = true;
+        reconocido = false;
     }
     
     @Override
     public void run()
     {
-        lastReaded = 0;
+        if (Parametros.DEBUG_CIRCUITO)
+            return;
+        lastReaded = this.interfazCircuito.leerRFID();
         while (run)
         {
-            int rfid = this.interfazCircuito.leerRFID(); /////////////////////////////////////// LEER RFID
-            if (rfid != lastReaded)
+            try{
+                synchronized (this)
+                {
+    //                if (!reconocido)
+    //                {
+                        int rfid = this.interfazCircuito.leerRFID(); /////////////////////////////////////// LEER RFID
+                        if (rfid > -1 && rfid != lastReaded)
+                        {
+                            eventListener.llegoVehiculo(rfid);
+                            lastReaded = rfid;
+                            reconocido = true;
+                        }
+
+                        try {    
+                            Thread.sleep(300);
+                        } catch (InterruptedException ex) {
+                            log.error("Error al dormir el proceso en PROCESO_RFID",ex);
+                        }
+    //                }
+                }
+            }catch(Exception e)
             {
-                eventListener.llegoVehiculo(rfid);
-                lastReaded = rfid;
-            }
-                
-            try {    
-                Thread.sleep(300);
-            } catch (InterruptedException ex) {
-                log.error("Error al dormir el proceso en PROCESO_RFID",ex);
+                log.error("Error, sistema no proceso correctamente la niformacion recibida del circuito",e);
             }
         }
+        log.debug("Finalizando el proceso Lector de RFID");
     }
     
     public void detenerProceso()

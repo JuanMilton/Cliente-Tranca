@@ -104,7 +104,7 @@ public class PropietarioDAO {
     }
     
     public synchronized List<Propietario> obtenerPropietarios(String placa) {
-        log.info("obtener Propietarios :: PLACA :" + placa);
+//        log.info("obtener Propietarios :: PLACA :" + placa);
         Connection con = null;
         PreparedStatement st = null;
         ResultSet rs = null;

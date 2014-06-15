@@ -9,7 +9,9 @@ package firstone.cliente.presentacion;
 import firstone.cliente.datos.model.Guardia;
 import firstone.cliente.negocio.GuardiaNegocio;
 import firstone.cliente.negocio.TrancaNegocio;
+import java.awt.Image;
 import java.io.File;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -33,16 +35,23 @@ public class LogIn extends javax.swing.JFrame {
         guardiaNegocio = new GuardiaNegocio();
         trancaNegocio = new TrancaNegocio();
         
-        if (trancaNegocio.obtenerTranca()==null)
-        {
-            JFrame.setDefaultLookAndFeelDecorated(true);
-            Configuracion frame = new Configuracion();
-            frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
-            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            frame.pack();
-            frame.setVisible(true);
-            this.dispose();
-        }
+//        if (trancaNegocio.obtenerTranca()==null)
+//        {
+//            JFrame.setDefaultLookAndFeelDecorated(true);
+//            Configuracion frame = new Configuracion();
+//            frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
+//            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+//            frame.pack();
+//            frame.setVisible(true);
+//            this.dispose();
+//        }
+        ImageIcon ic = new ImageIcon("etc/logo_main.png");
+        ic = new ImageIcon(ic.getImage().getScaledInstance(jLabel3.getWidth(), jLabel3.getHeight(), Image.SCALE_SMOOTH));
+        jLabel3.setIcon(ic);
+        
+        ImageIcon ic2 = new ImageIcon("etc/logo_firstonesoft.png");
+        ic2 = new ImageIcon(ic2.getImage().getScaledInstance(jLabel4.getWidth(), jLabel4.getHeight(), Image.SCALE_SMOOTH));
+        jLabel4.setIcon(ic2);
     }
 
     /**
@@ -55,6 +64,7 @@ public class LogIn extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -62,6 +72,7 @@ public class LogIn extends javax.swing.JFrame {
         jtext_contrasenia = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -69,19 +80,28 @@ public class LogIn extends javax.swing.JFrame {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 onClosingLogin(evt);
             }
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                onWindowOpened(evt);
+            }
         });
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 102));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jLabel1.setText("CI");
@@ -133,17 +153,23 @@ public class LogIn extends javax.swing.JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 61, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -157,10 +183,10 @@ public class LogIn extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -175,6 +201,8 @@ public class LogIn extends javax.swing.JFrame {
             JFrame.setDefaultLookAndFeelDecorated(true);
             Main frame = new Main(guardia);
             frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
+            ImageIcon img = new ImageIcon("etc/logo.png");
+            frame.setIconImage(img.getImage());
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             frame.pack();
             frame.setVisible(true);
@@ -187,6 +215,19 @@ public class LogIn extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_onClosingLogin
 
+    private void onWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_onWindowOpened
+        if (trancaNegocio.obtenerTranca()==null)
+        {
+            JFrame.setDefaultLookAndFeelDecorated(true);
+            Configuracion frame = new Configuracion();
+            frame.setTitle("IdentiFour - Sistema de Control de Acceso Vehicular");
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            frame.pack();
+            frame.setVisible(true);
+//            this.dispose();
+        }
+    }//GEN-LAST:event_onWindowOpened
+
     /**
      * @param args the command line arguments
      */
@@ -198,7 +239,7 @@ public class LogIn extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -218,8 +259,13 @@ public class LogIn extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 LogIn login = new LogIn();
+                
                 login.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                ImageIcon img = new ImageIcon("etc/logo.png");
+                login.setIconImage(img.getImage());
                 login.setVisible(true);
+                
+                
             }
         });
     }
@@ -228,6 +274,8 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

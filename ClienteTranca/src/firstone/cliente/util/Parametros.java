@@ -34,6 +34,10 @@ public class Parametros {
         
         public static Boolean DEBUG_CIRCUITO                 = new Boolean(prop.getProperty("debug.circuito"));
         
+        ////// REGLAS
+        public static Boolean SEND_NOTIFICATIONS_CONDUCTORS = new Boolean(prop.getProperty("enviar.notificaciones.conductores"));
+        public static int TIME_WAIT_ANSWER_NOTIFICATION     = new Integer(prop.getProperty("tiempo.espera.respuesta.notificacion"));
+        
 	/** flujo de entrada relacionado con el archivo de configuracion */
 	private static InputStream configFileStream;
 

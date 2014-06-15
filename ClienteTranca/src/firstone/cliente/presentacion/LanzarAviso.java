@@ -14,6 +14,7 @@ import firstone.cliente.datos.model.Guardia;
 import firstone.cliente.datos.model.Tranca;
 import firstone.cliente.negocio.BitacoraNegocio;
 import java.util.Date;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 
@@ -36,7 +37,8 @@ public class LanzarAviso extends javax.swing.JFrame {
         initComponents();
         bitacoraNegocio = new BitacoraNegocio();
         interfazEnvioCliente = new InterfazEnvioCliente(cliente,guardia.getCi());
-        
+        ImageIcon img = new ImageIcon("etc/logo.png");
+        this.setIconImage(img.getImage());
         this.tranca = tranca;
         this.guardia = guardia;
     }

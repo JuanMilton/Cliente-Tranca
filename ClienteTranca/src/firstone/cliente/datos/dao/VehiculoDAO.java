@@ -23,7 +23,7 @@ public class VehiculoDAO {
     private static final Logger log = Logger.getLogger(VehiculoDAO.class);
 
     public synchronized Vehiculo get(int rfid) {
-        log.info("obtener Vehiculo :: RFID :" + rfid);
+//        log.info("obtener Vehiculo :: RFID :" + rfid);
         Connection con = null;
         PreparedStatement st = null;
         ResultSet rs = null;

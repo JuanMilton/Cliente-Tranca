@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/presentacion/LogIn.java</file>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/circuito/negocio/InteraccionNegocio.java</file>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/circuito/InterfazCircuito.java</file>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/circuito/proceso/ProcesoRFID.java</file>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/datos/model/Alarma.java</file>
+            <file>file:/E:/Ing.%20Informatica/Taller%20de%20Grado%201/SCAV/Cliente_Tranca/ClienteTranca/src/firstone/cliente/presentacion/Main.java</file>
+        </group>
     </open-files>
 </project-private>

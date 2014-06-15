@@ -24,7 +24,6 @@ public class InteraccionNegocio {
     InterfazCircuito interfazCircuito;
     boolean alarma;
     
-    
     public InteraccionNegocio()
     {
         interfazCircuito = new InterfazCircuito();
@@ -37,6 +36,7 @@ public class InteraccionNegocio {
 //        if (Parametros.DEBUG_CIRCUITO)
 //            return;
         interfazCircuito.levantarTranca(); ///////////////////////////////////////////////////////////// LEVANTAR BARRERA
+        InterfazCircuito.sensor_reading = true;
         while (interfazCircuito.leerSensor() == Sensor.NO_HAY_VEHICULO) ///////////////////////////////////////////////////////////// LEER SENSOR
         {
             try {
@@ -59,8 +59,9 @@ public class InteraccionNegocio {
         } catch (InterruptedException ex) {
             log.error("Error al dormir HILO",ex);
         }
-        
         interfazCircuito.bajarTranca(); ///////////////////////////////////////////////////////////// BAJAR BARRERA
+        InterfazCircuito.sensor_reading = false;
+        
     }
     
     public synchronized void activarAlarma()
